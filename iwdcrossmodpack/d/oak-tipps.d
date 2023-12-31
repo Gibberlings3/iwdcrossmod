@@ -6,7 +6,7 @@ See("L#TIP")
 CombatCounter(0)
 !See([ENEMY])
 Global("L#TippsOMawBanter1","GLOBAL",0)~ THEN L#OMB L#TippsOMawBanter1
-~I don't think I've ever seen anyone with magiv to control the forces of natures like yours. It's not like that of the Rashemi witches, the wychlaran, but neither is it like the magic of the Red Wizards.~
+~I don't think I've ever seen anyone with magic to control the forces of natures like yours. It's not like that of the Rashemi witches, the wychlaran, but neither is it like the magic of the Red Wizards.~
 DO ~IncrementGlobal("L#TippsOMawBanter1","GLOBAL",1)~
 == L#TIPB ~It's a very unique type of magic. I'm not the only geomantic arcanist out there, but I'm the only one I know.~
 == L#OMB ~Hmm. I prefer the energies you summon. It is far closer to nature.~
