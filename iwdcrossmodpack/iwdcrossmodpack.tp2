@@ -97,7 +97,6 @@ END
 	  OUTER_SET bantprob2 = 0
 // Banter initiation script - hopefully I find a better way
 	EXTEND_TOP ~BALDUR.BCS~ ~%MOD_FOLDER%/baf/baldur.baf~ EVAL
-
 	COMPILE ~%MOD_FOLDER%/d/banterfiles.D~
 	
 ACTION_IF MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
@@ -117,53 +116,160 @@ ACTION_IF MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
 	APPEND ~interdia.2da~ ~L#TIP L#TIPB L#TIPB~ UNLESS ~L#TIP~
 	APPEND ~interdia.2da~ ~L#OM L#OMB L#OMB~ UNLESS ~L#OM~
 END
-/*
+
+// Athanasios - Caedriel
+ACTION_IF MOD_IS_INSTALLED ~ATHANASIOSNPC/ATHANASIOSNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~CAEDRIELNPC/CAEDRIELNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Athanasios and AionZ's Caedriel~
+	COMPILE ~%MOD_FOLDER%/d/athanasios-caedriel.d~
+END
+
+// Athanasios - Dendjelion
+ACTION_IF MOD_IS_INSTALLED ~ATHANASIOSNPC/ATHANASIOSNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Athanasios and Lava's Dendjelion~
+	COMPILE ~%MOD_FOLDER%/d/athanasios-Dendjelion.d~
+END
+
+// Athanasios - Dusky
+ACTION_IF MOD_IS_INSTALLED ~ATHANASIOSNPC/ATHANASIOSNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~DUSKY/DUSKY.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Athanasios and Lava's Dusky~
+	COMPILE ~%MOD_FOLDER%/d/athanasios-dusky.d~
+END
+
+// Athanasios - Ina
+ACTION_IF MOD_IS_INSTALLED ~ATHANASIOSNPC/ATHANASIOSNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~INA/INA.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Athanasios and Lava's Ina~
+	COMPILE ~%MOD_FOLDER%/d/athanasios-ina.d~
+END
+
+// Athanasios - IWDNPC
+ACTION_IF MOD_IS_INSTALLED ~ATHANASIOSNPC/ATHANASIOSNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Athanasios and Kulyok's Icewind Dale NPCs~
+	COMPILE ~%MOD_FOLDER%/d/athanasios-iwdnpc.d~
+END
+
+// Athanasios - Karihi
+ACTION_IF MOD_IS_INSTALLED ~ATHANASIOSNPC/ATHANASIOSNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~KarihiNPC/KarihiNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Athanasios and AionZ's Karihi~
+	COMPILE ~%MOD_FOLDER%/d/athanasios-karihi.d~
+END
+
+// Athanasios - Minerva
+ACTION_IF MOD_IS_INSTALLED ~ATHANASIOSNPC/ATHANASIOSNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Athanasios and AionZ's Minerva~
+	COMPILE ~%MOD_FOLDER%/d/athanasios-minerva.d~
+END
+
+// Athanasios - Nirik
+ACTION_IF MOD_IS_INSTALLED ~ATHANASIOSNPC/ATHANASIOSNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~NirikNPC/NirikNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Athanasios and AionZ's Nirik~
+	COMPILE ~%MOD_FOLDER%/d/athanasios-nirik.d~
+END
+
+// Athanasios - Oak-Maw
+ACTION_IF MOD_IS_INSTALLED ~ATHANASIOSNPC/ATHANASIOSNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~OAKMAW/OAKMAW.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Athanasios and Lava's Oak-Maw~
+	COMPILE ~%MOD_FOLDER%/d/athanasios-oak.d~
+END
+
+// Athanasios - Tal'zkah
+ACTION_IF MOD_IS_INSTALLED ~ATHANASIOSNPC/ATHANASIOSNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~TalzkahNPC/TalzkahNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Athanasios and AionZ's Tal'zkah~
+	COMPILE ~%MOD_FOLDER%/d/athanasios-talzkah.d~
+END
+
+// Athanasios - Tipps
+ACTION_IF MOD_IS_INSTALLED ~ATHANASIOSNPC/ATHANASIOSNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Athanasios and Lava's Tipps~
+	COMPILE ~%MOD_FOLDER%/d/athanasios-tipps.d~
+END
+
+// Athanasios - T'viy
+ACTION_IF MOD_IS_INSTALLED ~ATHANASIOSNPC/ATHANASIOSNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Athanasios and Lava's T'viy~
+	COMPILE ~%MOD_FOLDER%/d/athanasios-tviy.d~
+END
+
+// Athanasios - Urchin
+ACTION_IF MOD_IS_INSTALLED ~ATHANASIOSNPC/ATHANASIOSNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~URCHIN/URCHIN.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Athanasios and Lava's Urchin~
+	COMPILE ~%MOD_FOLDER%/d/athanasios-urchin.d~
+END
+
 // Caedriel - Dendjelion
 ACTION_IF MOD_IS_INSTALLED ~CAEDRIELNPC/CAEDRIELNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for AionZ's Caedriel and Lava's Dendjelion~
-
 	COMPILE ~%MOD_FOLDER%/d/caedriel-Dendjelion.d~
 END
 
 // Caedriel - Dusky
 ACTION_IF MOD_IS_INSTALLED ~CAEDRIELNPC/CAEDRIELNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~DUSKY/DUSKY.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for AionZ's Caedriel and Lava's Dusky~
-
 	COMPILE ~%MOD_FOLDER%/d/caedriel-dusky.d~
 END
 
 // Caedriel - Ina
 ACTION_IF MOD_IS_INSTALLED ~CAEDRIELNPC/CAEDRIELNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~INA/INA.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for AionZ's Caedriel and Lava's Ina~
-
 	COMPILE ~%MOD_FOLDER%/d/caedriel-ina.d~
+END
+
+// Caedriel - IWDNPC
+ACTION_IF MOD_IS_INSTALLED ~CAEDRIELNPC/CAEDRIELNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Caedriel and Kulyok's Icewind Dale NPCs~
+	COMPILE ~%MOD_FOLDER%/d/caedriel-iwdnpc.d~
 END
 
 // Caedriel - Karihi
 ACTION_IF MOD_IS_INSTALLED ~CAEDRIELNPC/CAEDRIELNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~KarihiNPC/KarihiNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for AionZ's Caedriel and AionZ's Karihi~
-
 	COMPILE ~%MOD_FOLDER%/d/caedriel-karihi.d~
 END
 
 // Caedriel - Minerva
 ACTION_IF MOD_IS_INSTALLED ~CAEDRIELNPC/CAEDRIELNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for AionZ's Caedriel and AionZ's Minerva~
-
 	COMPILE ~%MOD_FOLDER%/d/caedriel-minerva.d~
+END
+
+// Caedriel - Nirik
+ACTION_IF MOD_IS_INSTALLED ~CAEDRIELNPC/CAEDRIELNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~NirikNPC/NirikNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Caedriel and AionZ's Nirik~
+	COMPILE ~%MOD_FOLDER%/d/caedriel-nirik.d~
+END
+
+// Caedriel - Oak-Maw
+ACTION_IF MOD_IS_INSTALLED ~CAEDRIELNPC/CAEDRIELNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~OAKMAW/OAKMAW.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Caedriel and Lava's Oak-Maw~
+	COMPILE ~%MOD_FOLDER%/d/caedriel-oak.d~
+END
+
+// Caedriel - Tal'zkah
+ACTION_IF MOD_IS_INSTALLED ~CAEDRIELNPC/CAEDRIELNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~TalzkahNPC/TalzkahNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Caedriel and AionZ's Tal'zkah~
+	COMPILE ~%MOD_FOLDER%/d/caedriel-talzkah.d~
+END
+
+// Caedriel - Tipps
+ACTION_IF MOD_IS_INSTALLED ~CAEDRIELNPC/CAEDRIELNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Caedriel and Lava's Tipps~
+	COMPILE ~%MOD_FOLDER%/d/caedriel-tipps.d~
+END
+
+// Caedriel - T'viy
+ACTION_IF MOD_IS_INSTALLED ~CAEDRIELNPC/CAEDRIELNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Caedriel and Lava's T'viy~
+	COMPILE ~%MOD_FOLDER%/d/caedriel-tviy.d~
 END
 
 // Caedriel - Urchin
 ACTION_IF MOD_IS_INSTALLED ~CAEDRIELNPC/CAEDRIELNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~URCHIN/URCHIN.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for AionZ's Caedriel and Lava's Urchin~
-
 	COMPILE ~%MOD_FOLDER%/d/caedriel-urchin.d~
 END
-*/
+
 // Dendjelion - IWDNPC
 ACTION_IF MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Dendjelion and Kulyok's Icewind Dale NPCs~
-
 	COMPILE ~%MOD_FOLDER%/d/Dendjelion-iwdnpc.d~
 END
 
@@ -192,168 +298,198 @@ END
 // Dendjelion - Dusky
 ACTION_IF MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ AND MOD_IS_INSTALLED ~DUSKY/DUSKY.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Dendjelion and Lava's Dusky~
-
 	COMPILE ~%MOD_FOLDER%/d/Dendjelion-dusky.d~
 END
 
 // Dendjelion - Ina
 ACTION_IF MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ AND MOD_IS_INSTALLED ~INA/INA.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Dendjelion and Lava's Ina~
-
 	COMPILE ~%MOD_FOLDER%/d/Dendjelion-ina.d~
 END
 
 // Dendjelion - Karihi
 ACTION_IF MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ AND MOD_IS_INSTALLED ~KarihiNPC/KarihiNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Dendjelion and AionZ's Karihi~
-
 	COMPILE ~%MOD_FOLDER%/d/Dendjelion-karihi.d~
 END
 
 // Dendjelion - Minerva
 ACTION_IF MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ AND MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Dendjelion and AionZ's Minerva~
-
 	COMPILE ~%MOD_FOLDER%/d/Dendjelion-minerva.d~
+END
+
+// Dendjelion - Nirik
+ACTION_IF MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ AND MOD_IS_INSTALLED ~NirikNPC/NirikNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Dendjelion and AionZ's Nirik~
+	COMPILE ~%MOD_FOLDER%/d/Dendjelion-nirik.d~
 END
 
 // Dendjelion - Oak-Maw
 ACTION_IF MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ AND MOD_IS_INSTALLED ~OAKMAW/OAKMAW.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Dendjelion and Lava's Oak-Maw~
-
 	COMPILE ~%MOD_FOLDER%/d/Dendjelion-oak.d~
+END
+
+// Dendjelion - Orra
+ACTION_IF MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ AND MOD_IS_INSTALLED ~Orra/Orra.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Dendjelion and Lava's Orra~
+	COMPILE ~%MOD_FOLDER%/d/Dendjelion-Orra.d~
+END
+
+// Dendjelion - Tal'zkah
+ACTION_IF MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ AND MOD_IS_INSTALLED ~TalzkahNPC/TalzkahNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Dendjelion and AionZ's Tal'zkah~
+	COMPILE ~%MOD_FOLDER%/d/Dendjelion-talzkah.d~
 END
 
 // Dendjelion - Tipps
 ACTION_IF MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ AND MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Dendjelion and Lava's Tipps~
-
 	COMPILE ~%MOD_FOLDER%/d/tipps-dendjelion.d~
 END
 
 // Dendjelion - T'viy
 ACTION_IF MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ AND MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Dendjelion and Lava's T'viy~
-
 	COMPILE ~%MOD_FOLDER%/d/Dendjelion-tviy.d~
 END
 
 // Dendjelion - Urchin
 ACTION_IF MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ AND MOD_IS_INSTALLED ~URCHIN/URCHIN.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Dendjelion and Lava's Urchin~
-
 	COMPILE ~%MOD_FOLDER%/d/Dendjelion-urchin.d~
 END
 
 // Dusky - Ina
 ACTION_IF MOD_IS_INSTALLED ~INA/INA.TP2~ ~0~ AND MOD_IS_INSTALLED ~DUSKY/DUSKY.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Dusky and Lava's Ina~
-
 	COMPILE ~%MOD_FOLDER%/d/dusky-ina.d~
 END
 
 // Dusky - Karihi
 ACTION_IF MOD_IS_INSTALLED ~KarihiNPC/KarihiNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~DUSKY/DUSKY.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Dusky and AionZ's Karihi~
-
 	COMPILE ~%MOD_FOLDER%/d/dusky-karihi.d~
 END
 
 // Dusky - Minerva
 ACTION_IF MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~DUSKY/DUSKY.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Dusky and AionZ's Minerva~
-
 	COMPILE ~%MOD_FOLDER%/d/dusky-minerva.d~
+END
+
+// Dusky - Nirik
+ACTION_IF MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~NirikNPC/NirikNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Dusky and AionZ's Nirik~
+	COMPILE ~%MOD_FOLDER%/d/dusky-nirik.d~
 END
 
 // Dusky - Oak-Maw
 ACTION_IF MOD_IS_INSTALLED ~DUSKY/DUSKY.TP2~ ~0~ AND MOD_IS_INSTALLED ~OAKMAW/OAKMAW.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Dusky and Lava's Oak-Maw~
-
 	COMPILE ~%MOD_FOLDER%/d/dusky-oak.d~
+END
+
+// Dusky - Orra
+ACTION_IF MOD_IS_INSTALLED ~Dusky/Dusky.TP2~ ~0~ AND MOD_IS_INSTALLED ~Orra/Orra.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Dusky and Lava's Orra~
+	COMPILE ~%MOD_FOLDER%/d/Dusky-Orra.d~
+END
+
+// Dusky - Tal'zkah
+ACTION_IF MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~TalzkahNPC/TalzkahNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Dusky and AionZ's Tal'zkah~
+	COMPILE ~%MOD_FOLDER%/d/dusky-talzkah.d~
 END
 
 // Dusky - Tipps
 ACTION_IF MOD_IS_INSTALLED ~DUSKY/DUSKY.TP2~ ~0~ AND MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Dusky and Lava's Tipps~
-
 	COMPILE ~%MOD_FOLDER%/d/dusky-tipps.d~
 END
 
 // Dusky - T'viy
 ACTION_IF MOD_IS_INSTALLED ~DUSKY/DUSKY.TP2~ ~0~ AND MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Dusky and Lava's T'viy~
-
 	COMPILE ~%MOD_FOLDER%/d/dusky-tviy.d~
 END
 
 // Dusky - Urchin
 ACTION_IF MOD_IS_INSTALLED ~DUSKY/DUSKY.TP2~ ~0~ AND MOD_IS_INSTALLED ~URCHIN/URCHIN.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Dusky and Lava's Urchin~
-
 	COMPILE ~%MOD_FOLDER%/d/dusky-urchin.d~
 END
 
 // Dusky - IWDNPC
 ACTION_IF MOD_IS_INSTALLED ~DUSKY/DUSKY.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Dusky and Kulyok's Icewind Dale NPCs~
-
 	COMPILE ~%MOD_FOLDER%/d/dusky-iwdnpc.d~
 END
 
 // Ina - Karihi
 ACTION_IF MOD_IS_INSTALLED ~INA/INA.TP2~ ~0~ AND MOD_IS_INSTALLED ~KarihiNPC/KarihiNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Ina and AionZ's Karihi~
-
 	COMPILE ~%MOD_FOLDER%/d/ina-karihi.d~
 END
 
 // Ina - Minerva
 ACTION_IF MOD_IS_INSTALLED ~INA/INA.TP2~ ~0~ AND MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Ina and AionZ's Minerva~
-
 	COMPILE ~%MOD_FOLDER%/d/ina-minerva.d~
+END
+
+// Ina - Nirik
+ACTION_IF MOD_IS_INSTALLED ~INA/INA.TP2~ ~0~ AND MOD_IS_INSTALLED ~NirikNPC/NirikNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Ina and AionZ's Nirik~
+	COMPILE ~%MOD_FOLDER%/d/ina-nirik.d~
 END
 
 // Ina - Oak-Maw
 ACTION_IF MOD_IS_INSTALLED ~INA/INA.TP2~ ~0~ AND MOD_IS_INSTALLED ~OAKMAW/OAKMAW.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Ina and Lava's Oak-Maw~
-
 	COMPILE ~%MOD_FOLDER%/d/ina-oak.d~
+END
+
+// Ina - Orra
+ACTION_IF MOD_IS_INSTALLED ~Ina/Ina.TP2~ ~0~ AND MOD_IS_INSTALLED ~Orra/Orra.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Ina and Lava's Orra~
+	COMPILE ~%MOD_FOLDER%/d/Ina-Orra.d~
+END
+
+// Ina - Tal'zkah
+ACTION_IF MOD_IS_INSTALLED ~INA/INA.TP2~ ~0~ AND MOD_IS_INSTALLED ~TalzkahNPC/TalzkahNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Ina and AionZ's Tal'zkah~
+	COMPILE ~%MOD_FOLDER%/d/ina-talzkah.d~
 END
 
 // Ina - Tipps
 ACTION_IF MOD_IS_INSTALLED ~INA/INA.TP2~ ~0~ AND MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Ina and Lava's Tipps~
-
 	COMPILE ~%MOD_FOLDER%/d/ina-tipps.d~
 END
 
 // Ina - T'viy
 ACTION_IF MOD_IS_INSTALLED ~INA/INA.TP2~ ~0~ AND MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Ina and Lava's T'viy~
-
 	COMPILE ~%MOD_FOLDER%/d/Ina-tviy.d~
 END
 
 // Ina - Urchin
 ACTION_IF MOD_IS_INSTALLED ~INA/INA.TP2~ ~0~ AND MOD_IS_INSTALLED ~URCHIN/URCHIN.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Ina and Lava's Urchin~
-
 	COMPILE ~%MOD_FOLDER%/d/ina-urchin.d~
 END
 
 // Ina - IWDNPC
 ACTION_IF MOD_IS_INSTALLED ~INA/INA.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Ina and Kulyok's Icewind Dale NPCs~
-
 	COMPILE ~%MOD_FOLDER%/d/ina-iwdnpc.d~
 END
 
 // Karihi - Minerva
 ACTION_IF MOD_IS_INSTALLED ~KarihiNPC/KarihiNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for AionZ's Karihi and AionZ's Minerva~
-
 	COMPILE ~%MOD_FOLDER%/d/karihi-minerva.d~
 	EXTEND_TOP ~C0MMIND.BCS~ ~%MOD_FOLDER%/baf/C0MMIND-karihi.baf~
 	EXTEND_TOP ~C0MMINS.BCS~ ~%MOD_FOLDER%/baf/C0MMINS-karihi.baf~
@@ -362,35 +498,48 @@ END
 // Karihi - IWDNPC
 ACTION_IF MOD_IS_INSTALLED ~KarihiNPC/KarihiNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for AionZ's Karihi and Kulyok's Icewind Dale NPCs~
-
 	COMPILE ~%MOD_FOLDER%/d/karihi-iwdnpc.d~
+END
+
+// Karihi - Nirik
+ACTION_IF MOD_IS_INSTALLED ~KarihiNPC/KarihiNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~NirikNPC/NirikNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Karihi and AionZ's Nirik~
+	COMPILE ~%MOD_FOLDER%/d/karihi-nirik.d~
 END
 
 // Karihi - Oak-Maw
 ACTION_IF MOD_IS_INSTALLED ~KarihiNPC/KarihiNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~OAKMAW/OAKMAW.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for AionZ's Karihi and Lava's Oak-Maw~
-
 	COMPILE ~%MOD_FOLDER%/d/karihi-oak.d~
+END
+
+// Karihi - Orra
+ACTION_IF MOD_IS_INSTALLED ~KarihiNPC/KarihiNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~Orra/Orra.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Karihi and Lava's Orra~
+	COMPILE ~%MOD_FOLDER%/d/Karihi-Orra.d~
+END
+
+// Karihi - Tal'zkah
+ACTION_IF MOD_IS_INSTALLED ~KarihiNPC/KarihiNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~TalzkahNPC/TalzkahNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Karihi and AionZ's Tal'zkah~
+	COMPILE ~%MOD_FOLDER%/d/karihi-talzkah.d~
 END
 
 // Karihi - Tipps
 ACTION_IF MOD_IS_INSTALLED ~KarihiNPC/KarihiNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for AionZ's Karihi and Lava's Tipps~
-
 	COMPILE ~%MOD_FOLDER%/d/karihi-tipps.d~
 END
 
 // Karihi - T'viy
 ACTION_IF MOD_IS_INSTALLED ~KarihiNPC/KarihiNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for AionZ's Karihi and Lava's T'viy~
-
 	COMPILE ~%MOD_FOLDER%/d/karihi-tviy.d~
 END
 
 // Karihi - Urchin
 ACTION_IF MOD_IS_INSTALLED ~KarihiNPC/KarihiNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~URCHIN/URCHIN.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for AionZ's Karihi and Lava's Urchin~
-
 	COMPILE ~%MOD_FOLDER%/d/karihi-urchin.d~
 	EXTEND_TOP ~C0KARIHD.BCS~ ~%MOD_FOLDER%/baf/C0KARIHD-urchin.baf~
 	EXTEND_TOP ~C0KARIHS.BCS~ ~%MOD_FOLDER%/baf/C0KARIHS-urchin.baf~
@@ -399,98 +548,198 @@ END
 // Minerva - IWDNPC
 ACTION_IF MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for AionZ's Minerva and Kulyok's Icewind Dale NPCs~
-
 	COMPILE ~%MOD_FOLDER%/d/minerva-iwdnpc.d~
+END
+
+// Minerva - Nirik
+ACTION_IF MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~NirikNPC/NirikNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Minerva and AionZ's Nirik~
+	COMPILE ~%MOD_FOLDER%/d/minerva-nirik.d~
 END
 
 // Minerva - Oak-Maw
 ACTION_IF MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~OAKMAW/OAKMAW.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for AionZ's Minerva and Lava's Oak-Maw~
-
 	COMPILE ~%MOD_FOLDER%/d/minerva-oak.d~
+END
+
+// Minerva - Orra
+ACTION_IF MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~Orra/Orra.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Minerva and Lava's Orra~
+	COMPILE ~%MOD_FOLDER%/d/Minerva-Orra.d~
+END
+
+// Minerva - Tal'zkah
+ACTION_IF MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~TalzkahNPC/TalzkahNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Minerva and AionZ's Tal'zkah~
+	COMPILE ~%MOD_FOLDER%/d/minerva-talzkah.d~
 END
 
 // Minerva - Tipps
 ACTION_IF MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for AionZ's Minerva and Lava's Tipps~
-
 	COMPILE ~%MOD_FOLDER%/d/minerva-tipps.d~
 END
 
 // Minerva - T'viy
 ACTION_IF MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for AionZ's Minerva and Lava's T'viy~
-
 	COMPILE ~%MOD_FOLDER%/d/Minerva-tviy.d~
 END
 
 // Minerva - Urchin
 ACTION_IF MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~URCHIN/URCHIN.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for AionZ's Minerva and Lava's Urchin~
-
 	COMPILE ~%MOD_FOLDER%/d/minerva-urchin.d~
 END
 
-// Oak-Maw - Tipps
-ACTION_IF MOD_IS_INSTALLED ~OAKMAW/OAKMAW.TP2~ ~0~ AND MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ THEN BEGIN
-  PRINT ~Adding crossmod for Lava's Oak-Maw and Lava's Tipps~
+// Nirik - IWDNPC
+ACTION_IF MOD_IS_INSTALLED ~NirikNPC/NirikNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Nirik and Kulyok's Icewind Dale NPCs~
+	COMPILE ~%MOD_FOLDER%/d/nirik-iwdnpc.d~
+END
 
-	COMPILE ~%MOD_FOLDER%/d/oak-tipps.d~
+// Nirik - Oak-Maw
+ACTION_IF MOD_IS_INSTALLED ~NirikNPC/NirikNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~OAKMAW/OAKMAW.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Nirik and Lava's Oak-Maw~
+	COMPILE ~%MOD_FOLDER%/d/nirik-oak.d~
+END
+
+// Nirik - Tal'zkah
+ACTION_IF MOD_IS_INSTALLED ~NirikNPC/NirikNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~TalzkahNPC/TalzkahNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Nirik and AionZ's Tal'zkah~
+	COMPILE ~%MOD_FOLDER%/d/nirik-talzkah.d~
+END
+
+// Nirik - Tipps
+ACTION_IF MOD_IS_INSTALLED ~NirikNPC/NirikNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Nirik and Lava's Tipps~
+	COMPILE ~%MOD_FOLDER%/d/nirik-tipps.d~
+END
+
+// Nirik - T'viy
+ACTION_IF MOD_IS_INSTALLED ~NirikNPC/NirikNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Nirik and Lava's T'viy~
+	COMPILE ~%MOD_FOLDER%/d/nirik-tviy.d~
+END
+
+// Nirik - Urchin
+ACTION_IF MOD_IS_INSTALLED ~NirikNPC/NirikNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~URCHIN/URCHIN.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Nirik and Lava's Urchin~
+	COMPILE ~%MOD_FOLDER%/d/nirik-urchin.d~
 END
 
 // Oak-Maw - IWDNPC
 ACTION_IF MOD_IS_INSTALLED ~OAKMAW/OAKMAW.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Oak-Maw and Kulyok's Icewind Dale NPCs~
-
 	COMPILE ~%MOD_FOLDER%/d/oak-iwdnpc.d~
+END
+
+// Oak-Maw - Orra
+ACTION_IF MOD_IS_INSTALLED ~OAKMAW/OAKMAW.TP2~ ~0~ AND MOD_IS_INSTALLED ~Orra/Orra.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Oak-Maw and Lava's Orra~
+	COMPILE ~%MOD_FOLDER%/d/oak-Orra.d~
+END
+
+// Oak-Maw - Tipps
+ACTION_IF MOD_IS_INSTALLED ~OAKMAW/OAKMAW.TP2~ ~0~ AND MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Oak-Maw and Lava's Tipps~
+	COMPILE ~%MOD_FOLDER%/d/oak-tipps.d~
+END
+
+// Oak-Maw - Tal'zkah
+ACTION_IF MOD_IS_INSTALLED ~OAKMAW/OAKMAW.TP2~ ~0~ AND MOD_IS_INSTALLED ~TalzkahNPC/TalzkahNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Oak-Maw and Lava's Tal'zkah~
+	COMPILE ~%MOD_FOLDER%/d/oak-talzkah.d~
 END
 
 // Oak-Maw - Urchin
 ACTION_IF MOD_IS_INSTALLED ~OAKMAW/OAKMAW.TP2~ ~0~ AND MOD_IS_INSTALLED ~URCHIN/URCHIN.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Oak-Maw and Lava's Urchin~
-
 	COMPILE ~%MOD_FOLDER%/d/oak-urchin.d~
+END
+
+// Orra - IWDNPC
+ACTION_IF MOD_IS_INSTALLED ~Orra/Orra.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Oak-Maw and Kulyok's Icewind Dale NPCs~
+	COMPILE ~%MOD_FOLDER%/d/Orra-iwdnpc.d~
+END
+
+// Orra - T'viy
+ACTION_IF MOD_IS_INSTALLED ~Orra/Orra.TP2~ ~0~ AND MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Oak-Maw and Lava's T'viy~
+	COMPILE ~%MOD_FOLDER%/d/Orra-tviy.d~
+END
+
+// Orra - Tipps
+ACTION_IF MOD_IS_INSTALLED ~Orra/Orra.TP2~ ~0~ AND MOD_IS_INSTALLED ~Tipps/Tipps.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Oak-Maw and Lava's Tipps~
+	COMPILE ~%MOD_FOLDER%/d/Orra-tipps.d~
+END
+
+// Orra - Urchin
+ACTION_IF MOD_IS_INSTALLED ~Orra/Orra.TP2~ ~0~ AND MOD_IS_INSTALLED ~Urchin/Urchin.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Oak-Maw and Lava's Urchin~
+	COMPILE ~%MOD_FOLDER%/d/Orra-Urchin.d~
+END
+
+// Tal'zkah - IWDNPC
+ACTION_IF MOD_IS_INSTALLED ~TalzkahNPC/TalzkahNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Tal'zkah and Kulyok's Icewind Dale NPCs~
+	COMPILE ~%MOD_FOLDER%/d/talzkah-iwdnpc.d~
+END
+
+// Tal'zkah - Tipps
+ACTION_IF MOD_IS_INSTALLED ~TalzkahNPC/TalzkahNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Tal'zkah and Lava's Tipps~
+	COMPILE ~%MOD_FOLDER%/d/talzkah-tipps.d~
+END
+
+// Tal'zkah - T'viy
+ACTION_IF MOD_IS_INSTALLED ~TalzkahNPC/TalzkahNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Tal'zkah and Lava's T'viy~
+	COMPILE ~%MOD_FOLDER%/d/talzkah-tviy.d~
+END
+
+// Tal'zkah - Urchin
+ACTION_IF MOD_IS_INSTALLED ~TalzkahNPC/TalzkahNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~URCHIN/URCHIN.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Tal'zkah and Lava's Urchin~
+	COMPILE ~%MOD_FOLDER%/d/talzkah-urchin.d~
 END
 
 // Tipps - IWDNPC
 ACTION_IF MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Tipps and Kulyok's Icewind Dale NPCs~
-
 	COMPILE ~%MOD_FOLDER%/d/tipps-iwdnpc.d~
 END
 
 // Tipps - T'viy
 ACTION_IF MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ AND MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Tipps and Lava's T'viy~
-
 	COMPILE ~%MOD_FOLDER%/d/tipps-tviy.d~
 END
 
 // Tipps - Urchin
 ACTION_IF MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ AND MOD_IS_INSTALLED ~URCHIN/URCHIN.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Tipps and Lava's Urchin~
-
 	COMPILE ~%MOD_FOLDER%/d/tipps-urchin.d~
 END
 
 // Urchin - IWDNPC
 ACTION_IF MOD_IS_INSTALLED ~URCHIN/URCHIN.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Urchin and Kulyok's Icewind Dale NPCs~
-
 	COMPILE ~%MOD_FOLDER%/d/urchin-iwdnpc.d~
 END
 
 // Urchin - T'viy
 ACTION_IF MOD_IS_INSTALLED ~URCHIN/URCHIN.TP2~ ~0~ AND MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Urchin and Lava's T'viy~
-
 	COMPILE ~%MOD_FOLDER%/d/urchin-tviy.d~
 END
 
 // Minerva - Special Dialogue
 ACTION_IF MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding special crossmod for AionZ's Minerva~
-
 	COMPILE ~%MOD_FOLDER%/d/minerva-all.d~
 	EXTEND_TOP ~C0MMIND.BCS~ ~%MOD_FOLDER%/baf/c0mmind-special.baf~
 END
@@ -541,168 +790,144 @@ END
 // Dendjelion - IWDNPC
 	ACTION_IF MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding romance conflict for Lava's Dendjelion and Kulyok's Icewind Dale NPCs~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/Dendjelion-iwdnpc.d~
 	END
 
 // Dendjelion - Dusky
 	ACTION_IF MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ AND MOD_IS_INSTALLED ~DUSKY/DUSKY.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding romance conflict for Lava's Dendjelion and Lava's Dusky~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/Dendjelion-Dusky.d~
 	END
 
 // Dendjelion - Ina
 	ACTION_IF MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ AND MOD_IS_INSTALLED ~INA/INA.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding romance conflict for Lava's Dendjelion and Lava's Ina~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/Dendjelion-ina.d~
 	END
 
 // Dendjelion - Karihi
 	ACTION_IF MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ AND MOD_IS_INSTALLED ~KarihiNPC/KarihiNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding romance conflict for Lava's Dendjelion and AionZ's Karihi~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/Dendjelion-karihi.d~
 	END
 
 // Dendjelion - Minerva
 	ACTION_IF MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ AND MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding romance conflict for Lava's Dendjelion and AionZ's Minerva~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/Dendjelion-Minerva.d~
 	END
 
 // Dusky - Karihi
 ACTION_IF MOD_IS_INSTALLED ~KarihiNPC/KarihiNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~DUSKY/DUSKY.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding romance conflict for Lava's Dusky and AionZ's Karihi~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/dusky-karihi.d~
 END
 
 // Dusky - Minerva
 ACTION_IF MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~DUSKY/DUSKY.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding romance conflict for Lava's Dusky and AionZ's Minerva~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/dusky-minerva.d~
 END
 
 // Dusky - IWDNPC
 ACTION_IF MOD_IS_INSTALLED ~DUSKY/DUSKY.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding romance conflict for Lava's Dusky and Kulyok's Icewind Dale NPCs~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/dusky-iwdnpc.d~
 END
 
 // Dusky - Oak-Maw
 ACTION_IF MOD_IS_INSTALLED ~DUSKY/DUSKY.TP2~ ~0~ AND MOD_IS_INSTALLED ~OAKMAW/OAKMAW.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding romance conflict for Lava's Dusky and Lava's Oak-Maw~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/dusky-oak.d~
 END
 
 // Dusky - Tipps
 ACTION_IF MOD_IS_INSTALLED ~DUSKY/DUSKY.TP2~ ~0~ AND MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding romance conflict for Lava's Dusky and Lava's Tipps~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/dusky-tipps.d~
 END
 
 // Ina - Minerva
 ACTION_IF MOD_IS_INSTALLED ~INA/INA.TP2~ ~0~ AND MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding romance conflict for Lava's Ina and AionZ's Minerva~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/ina-minerva.d~
 END
 
 // Ina - IWDNPC
 ACTION_IF MOD_IS_INSTALLED ~INA/INA.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Ina and Kulyok's Icewind Dale NPCs~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/ina-iwdnpc.d~
 END
 
 // Ina - Oak-Maw
 ACTION_IF MOD_IS_INSTALLED ~INA/INA.TP2~ ~0~ AND MOD_IS_INSTALLED ~OAKMAW/OAKMAW.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding romance conflict for Lava's Ina and Lava's Oak-Maw~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/ina-oak.d~
 END
 
 // Ina - Tipps
 ACTION_IF MOD_IS_INSTALLED ~INA/INA.TP2~ ~0~ AND MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding romance conflict for Lava's Ina and Lava's Tipps~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/ina-tipps.d~
 END
 
 // Karihi - Minerva
 ACTION_IF MOD_IS_INSTALLED ~KarihiNPC/KarihiNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding romance conflict for AionZ's Karihi and AionZ's Minerva~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/karihi-minerva.d~
 END
 
 // Karihi - IWDNPC
 ACTION_IF MOD_IS_INSTALLED ~KarihiNPC/KarihiNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding romance conflict for AionZ's Karihi and Kulyok's Icewind Dale NPCs~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/karihi-iwdnpc.d~
 END
 
 // Karihi - Oak-Maw
 ACTION_IF MOD_IS_INSTALLED ~KarihiNPC/KarihiNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~OAKMAW/OAKMAW.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding romance conflict for AionZ's Karihi and Lava's Oak-Maw~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/karihi-oak.d~
 END
 
 // Karihi - Tipps
 ACTION_IF MOD_IS_INSTALLED ~KarihiNPC/KarihiNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding romance conflict for AionZ's Karihi and Lava's Tipps~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/karihi-tipps.d~
 END
 
 // Minerva - IWDNPC
 ACTION_IF MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding romance conflict for AionZ's Minerva and Kulyok's Icewind Dale NPCs~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/minerva-iwdnpc.d~
 END
 
 // Minerva - Oak-Maw
 ACTION_IF MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~OAKMAW/OAKMAW.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding romance conflict for AionZ's Minerva and Lava's Oak-Maw~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/minerva-oak.d~
 END
 
 // Minerva - Tipps
 ACTION_IF MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding romance conflict for AionZ's Minerva and Lava's Tipps~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/minerva-tipps.d~
 END
 
 // Oak-Maw - Tipps
 ACTION_IF MOD_IS_INSTALLED ~OAKMAW/OAKMAW.TP2~ ~0~ AND MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding romance conflict for Lava's Oak-Maw and Lava's Tipps~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/oak-tipps.d~
 END
 
 // Oak-Maw - IWDNPC
 ACTION_IF MOD_IS_INSTALLED ~OAKMAW/OAKMAW.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding romance conflict for Lava's Oak-Maw and Kulyok's Icewind Dale NPCs~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/oak-iwdnpc.d~
 END
 
 // Tipps - IWDNPC
 ACTION_IF MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding romance conflict for Lava's Tipps and Kulyok's Icewind Dale NPCs~
-
 	COMPILE ~%MOD_FOLDER%/romanceconflict/d/tipps-iwdnpc.d~
 END
 
