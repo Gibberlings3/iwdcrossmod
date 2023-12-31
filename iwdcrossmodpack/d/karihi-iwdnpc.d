@@ -106,7 +106,7 @@ DO ~IncrementGlobal("C0KarihiKorinBanter2","GLOBAL",1)~
 == BC0KARIH ~One could almost say he deserves to live with the consequences. Though... an eternity may be going too far, I admit.~
 == BO#KORIN ~Perhaps it may not be an eternity. The Seldarine are not cruel. As long as the madness does not overtake him again, he may yet repent.~
 == BC0KARIH ~Does he deserve that?~
-== BO#KORIN ~I do not know. But him—and his people—do not deserve to continue in their torment as they have for so long.~
+== BO#KORIN ~I do not know. But he—and his people—do not deserve to continue in their torment as they have for so long.~
 == BC0KARIH IF ~Alignment("C0KARIHI",MASK_GOOD)~ THEN ~...Perhaps you are right.~
 EXIT
 
@@ -120,7 +120,7 @@ CombatCounter(0)
 Global("C0KarihiNellaBanter1","GLOBAL",0)~ THEN BC0KARIH KARIHI-NELLA-BANTER-1
 ~I see you wincing every time I conjure a flame, Nella. Quite frankly, your unease bothers me far more than any words you might have. Spit it out.~ [C0BLANK]
 DO ~IncrementGlobal("C0KarihiNellaBanter1","GLOBAL",1)~
-== BO#NELLA ~I—it's nothing. A instinctive reaction, nothing more.~
+== BO#NELLA ~I—it's nothing. An instinctive reaction, nothing more.~
 == BC0KARIH ~I very much doubt that. Or do you take me for some kind of fool?~
 == BO#NELLA ~Truly, it is but a trifling matter. When I see you wield it as easily as I do my weapon, I cannot help but feel troubled.~
 == BC0KARIH ~A weapon is but a tool like any other. Fire can be shaped as a weapon, or as whatever tool suits me. It is merely a force I use as I require.~
@@ -196,8 +196,8 @@ CombatCounter(0)
 !See([ENEMY])
 Global("C0KarihiEncounter","GLOBAL",2)
 Global("C0KarihiSevernBanter3","GLOBAL",0)~ THEN BO#SEVER KARIHI-SEVERN-BANTER-3
-~So... Untheric, eh? I never would have saw that coming.~ [C0BLANK]
-DO ~IncrementGlobal("C0KarihiHolvirBanter3","GLOBAL",1)~
+~So... Untheric, eh? I never would have seen that coming.~ [C0BLANK]
+DO ~IncrementGlobal("C0KarihiSevernBanter3","GLOBAL",1)~
 == BC0KARIH ~Is that so? Too dead-set on your wild theories, Severn?~
 == BO#SEVER ~No, no, it's not that. I just... didn't see it in you. Unther's has a most terrible history. You just seemed well-adjusted and ultimately benevolent.~
 == BC0KARIH ~I... should take that as a compliment, I suppose. Looking back, I have few good memories of Unther before my house fell. Even my family... much as I loved them, they were ultimately no better than the rest.~

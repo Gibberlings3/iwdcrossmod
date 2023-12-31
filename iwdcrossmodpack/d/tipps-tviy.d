@@ -29,7 +29,7 @@ See("L#TIP")
 !StateCheck("L#TIP",CD_STATE_NOTVALID)
 CombatCounter(0)
 !See([ENEMY])
-Global("L#TippsTviyBanter1","GLOBAL",0)~ THEN L#TVIYB L#TippsTviyBanter2
+Global("L#TippsTviyBanter1","GLOBAL",1)~ THEN L#TVIYB L#TippsTviyBanter2
 ~YOU. You should become URDLEN'S CRAWLER. It would HELP T'viy to be BLIND. To those... THINGS you do.~
 DO ~IncrementGlobal("L#TippsTviyBanter1","GLOBAL",1)~
 == L#TIPB ~Perhaps you can just be blind already. PRETEND it's all a lie.~

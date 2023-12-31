@@ -65,7 +65,7 @@ CombatCounter(0)
 !StateCheck("L#INA",CD_STATE_NOTVALID)
 !StateCheck("O#HOLVIR",CD_STATE_NOTVALID)
 Global("L#InaHolvirBanter","GLOBAL",1)~ THEN L#INAB InaHolvir02
-~I believe we... did not end on our last conversation on the best note, Holvir.~
+~I believe we... did not end our last conversation on the best note, Holvir.~
 DO ~IncrementGlobal("L#InaHolvirBanter","GLOBAL",1)~ 
 ==BO#HOLVI ~We did not. If you are willing to share your thoughts now, however, I would be willing to listen.~
 ==L#INAB ~Very well, I will speak candidly. Do you truly view me as abberant to this realm? Like a twisted cloud in the otherwise clear sky?~
@@ -94,7 +94,7 @@ DO ~IncrementGlobal("L#InaTeriBanter1","GLOBAL",1)~
 ==BO#TERI ~Oh, I was just thinking out loud. It's kind of hard to see you in the dark... or in the middle of a snowfield, being a spectre at all. Have you ever considered taking advantage of that to... I dunno, learn to become a thief? You'd be great at picking locks and stealing things.~
 ==BO#SEVER IF ~IsGabber("O#SEVERN") !StateCheck("O#SEVERN",CD_STATE_NOTVALID)~ THEN ~Hmm, you know. She's got a point there.~
 ==L#INAB ~I am not an invisible trickster or mischievous fey, Teri. I have other gifts I would rather make use of.~
-==BO#TERI ~I don't doubt that. But you're got a lifetime... un-life-time...? ...to pick up all sorts of tricks.~
+==BO#TERI ~I don't doubt that. But you've got a lifetime... un-life-time...? ...to pick up all sorts of tricks.~
 ==L#INAB ~I think you have enough tricks in your arsenal for the both of us.~
 EXIT
 

@@ -12,9 +12,9 @@ DO ~IncrementGlobal("L#OakMawDuskyBanter1","GLOBAL",1)~
 == L#DUSKYB ~Oh, no. I've seen plenty of abnormal things before. Let me tell you about the time I went to a bathhouse in Luskan, not knowing it was made for dwarven merchants. *shudder* Never went back since. It was like swimming in soup... and the main ingredient was chest and beard hair.~
 == L#OMB ~Ugh.~
 == L#DUSKYB ~What I was going to say was that it wouldn't be easy for a big man like you to hide. Not that you'd need to, with how strong you are.~
-== L#OMB ~Hmh. Don't understimate my skills—I may not be the most nimble person, but I'm still a born hunter.~
+== L#OMB ~Hmh. Don't underestimate my skills—I may not be the most nimble person, but I'm still a born hunter.~
 == L#DUSKYB ~I never said you weren't. But hiding in forests and in a dungeon are two different things. I'm just not sure being subtle will work with you around.~
-== L#OMB ~I'm not going to get in the way, you can count on that much..~
+== L#OMB ~I'm not going to get in the way, you can count on that much.~
 EXIT
 
 CHAIN IF WEIGHT #-1

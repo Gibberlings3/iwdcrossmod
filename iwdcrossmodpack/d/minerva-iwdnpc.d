@@ -242,7 +242,7 @@ See("C0MMin")
 CombatCounter(0)
 !See([ENEMY])
 Global("C0MMinTeriBanter1","GLOBAL",0)~ THEN BO#TERI MINERVA-TERI-BANTER-1
-~I remember entering a house of Gond once. Oh, how lovely it was. So many strange and wondrous contraptions, gittering and shining...~ [C0BLANK]
+~I remember entering a house of Gond once. Oh, how lovely it was. So many strange and wondrous contraptions, glittering and shining...~ [C0BLANK]
 DO ~IncrementGlobal("C0MMinTeriBanter1","GLOBAL",1)~
 == BC0MMin ~Did you help yourself to a few?~
 == BO#TERI ~If I said no, would you believe me?~

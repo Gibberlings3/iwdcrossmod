@@ -11,7 +11,7 @@ DO ~IncrementGlobal("C0MMinDendjelionBanter1","GLOBAL",1)~
 == BC0MMin ~A child's game, huh? You know, I'd like to see you outplay me at *this* game. I don't suppose you've spent years sharpening your hand-eye coordination and reaction time?~
 == L#DENDJB ~Maybe not. I don't need to run and throw things from a distance to win my battles though. That's how a kid fights.~
 == BC0MMin ~Well, I've had plenty of people accusing me of never growing up... but really now, Dendjelion, I'm far older than you are, in case you've forgotten. I'm not *that* easy to push around.~
-== L#DENDJB ~Don't get me wrong, I'm not denyin' your style works! I've seen it first hand. It's just fun watching the blades fly in battle. Have you ever gotten close enough to see how confused and horrify they look when your knives impale 'em? Ha!~
+== L#DENDJB ~Don't get me wrong, I'm not denyin' your style works! I've seen it first hand. It's just fun watching the blades fly in battle. Have you ever gotten close enough to see how confused an' horrified they look when your knives impale 'em? Ha!~
 == BC0MMin ~Um... no. My knives explode, in case you've forgotten. I'd rather not be in close range for that. Also, I wouldn't look down on these knives. I'm always watching for the best place to throw them. Why, I think I see a few chinks in your armor right now! Might want to work on that.~
 == L#DENDJB ~Ah, stop makin' a fuss outta nothin', Minerva. I like watchin' your throwin' skills, but I wouldn't ever want to be on the receivin' end.~
 == BC0MMin ~Good to know! I'm sure you'll be fine, as long as you keep that thought in mind. Nothing to worry about, right? I shouldn't ever have any reason to throw a knife at *you*.~

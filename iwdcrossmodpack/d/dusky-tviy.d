@@ -11,7 +11,7 @@ DO ~IncrementGlobal("L#TviyDuskyBanter1","GLOBAL",1)~
 == L#TVIYB ~HE just DESERVES T'viy. HE deserves my life.~
 == L#DUSKYB ~So you just decided to give him everything you had because... he's who he is?~
 == L#TVIYB ~YES. Call it BLINDNESS. A true one.~
-== L#TVIYB ~Sometimes it's all that's needed. Some proper blidness. It can change everything. It can become a GIFT to a god. A gift that CAN'T be ignored.~
+== L#TVIYB ~Sometimes it's all that's needed. Some proper blindness. It can change everything. It can become a GIFT to a god. A gift that CAN'T be ignored.~
 == L#DUSKYB ~Whatever that means. I'm not sure I can make any sense from your words, gnome. Sorry.~
 EXIT
 

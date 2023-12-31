@@ -6,7 +6,7 @@ See("L#Ina")
 CombatCounter(0)
 !See([ENEMY])
 Global("L#OMInaBanter1","GLOBAL",0)~ THEN L#OMB OAKM-INA-BANTER-1
-~I find you form... familiar, ghost. You are much like the spirits of my homeland.~
+~I find your form... familiar, ghost. You are much like the spirits of my homeland.~
 DO ~IncrementGlobal("L#OMInaBanter1","GLOBAL",1)~
 == L#INAB ~The land of Rashemen, yes? I have read of it. It is a place of many traditions. I was reminded of what I learned when I met you, and now I wonder about the tastes the land and its stories have to offer.~
 == L#OMB ~I can't guess at what your 'tasting' is like, but to me, it would be... bittersweet, yet the aftertaste would leave you wanting for more.~
@@ -29,7 +29,7 @@ DO ~IncrementGlobal("L#OMInaBanter1","GLOBAL",1)~
 == L#INAB ~I do not know if my words are true. The tales come from others, and I cannot taste it from their words alone.~
 == L#OMB ~So it's not worth much to you.~
 == L#INAB ~No, you misunderstand. Even words have a great value. They were more than enough for me in life, but what I seek now is... more. Through taste, I can understand things far more than through the telling of tales.~
-== L#OMB ~I can only try to imagine what you mean and how you are able experience these... tastes.~
+== L#OMB ~I can only try to imagine what you mean and how you are to able experience these... tastes.~
 EXIT
 
 CHAIN IF WEIGHT #-1
@@ -46,7 +46,7 @@ DO ~IncrementGlobal("L#OMInaBanter1","GLOBAL",1)~
 == L#OMB ~Why not?~
 == L#INAB ~There are days when I no longer feel I belong in this world... but each time, there is a change, a new taste. And I cannot bring myself to give up on it.~
 == L#OMB ~The answer's no, then.~
-== L#INAB ~I don't know, Oak-Maw. Perhaps there no easy answer.~
+== L#INAB ~I don't know, Oak-Maw. Perhaps there is no easy answer.~
 EXIT
 
 CHAIN IF WEIGHT #-1

@@ -24,7 +24,7 @@ CombatCounter(0)
 !See([ENEMY])
 Global("C0KarihiDendjelionBanter2","GLOBAL",0)~ THEN L#DENDJB KARIHI-DENDJELION-2
 ~You know, Karihi, I can take a beatin', but I've had one too many close shaves with your fire while we're in a fight. You'd better not be doin' it on purpose.~ [C0BLANK]
-DO ~IncrementGlobal("C0KarihiDendjelionBanter3","GLOBAL",1)~
+DO ~IncrementGlobal("C0KarihiDendjelionBanter2","GLOBAL",1)~
 == BC0KARIH ~Keep your wild, uneducated insinuations to yourself.~
 == L#DENDJB ~Just say it if you're really tryin' to kill me. At least then I'll know what to expect.~
 == BC0KARIH ~If I were truly trying to exterminate you like the pest you are, you would not be standing here before me.~

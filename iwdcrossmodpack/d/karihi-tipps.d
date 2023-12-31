@@ -9,7 +9,7 @@ Global("L#KarihiTippsBanter1","GLOBAL",0)~ THEN BC0KARIH KARIHI-TIPPS-BANTER-1
 ~Really now, halfling, your efforts at preserving your heritage appear overly pretentious. I fail to see the cause for your desperation.~ 
 DO ~IncrementGlobal("L#KarihiTippsBanter1","GLOBAL",1)~
 == L#TipB ~'Pretentious'? Looked in the mirror lately, lady priss?~
-== BC0KARIH ~The power in your blood is a rare one, 'tis true, but it is hardly something that holds potential unmatched my an arcanist with sufficient knowledge.~
+== BC0KARIH ~The power in your blood is a rare one, 'tis true, but it is hardly something that holds potential unmatched by an arcanist with sufficient knowledge.~
 == L#TipB ~Oh, and there's no way you're talking about yourself here, right?~
 == BC0KARIH ~Hmph. It would hardly be a fair comparison to use me as a standard. Even among regular sorcerers, you are sorely lacking in certain... qualities.~
 == L#TipB ~*Excuse* me?! I lack qualities? I'll have you know, I have plenty of qualities! And unlike you, who seems to think you're good enough just by mastering fire magic, my connection with the earth is... more harmonious. You wouldn't understand.~

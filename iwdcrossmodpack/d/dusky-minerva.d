@@ -58,7 +58,7 @@ DO ~IncrementGlobal("C0MMinDuskyRomanceBanter1","GLOBAL",1)~
 == BC0MMin ~Ha ha ha... don't rub it in. Please.~
 == L#DUSKYB ~Now, why would I ever do that? I'm just surprised to finally discover something that flusters you... 'Mini'.~
 == BC0MMin ~DON'T.~
-== L#DUSKYB ~Aww, whyever? You seem to like it well enough when CHARNAME calls you that.~
+== L#DUSKYB ~Aww, whyever? You seem to like it well enough when <PLAYER1> calls you that.~
 == BC0MMin ~Remember, I have knives. Explosive. Knives.~
 == L#DUSKYB ~*grin* Fair enough.~
 EXIT

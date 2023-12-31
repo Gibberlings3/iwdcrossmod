@@ -62,7 +62,7 @@ Global("L#OMHolvirBanter","GLOBAL",1)~ THEN L#OMB OMawHolvir02
 DO ~IncrementGlobal("L#OMHolvirBanter","GLOBAL",1)~ 
 ==BO#HOLVI ~*The* City of Splendors, Waterdeep. It is the stronghold of my order, and my home.~
 ==L#OMB ~And what are these 'splendors' that Waterdeep has to offer?~
-==BO#HOLVI ~There is no single word to describe it. It is the home of artisans and many goodly faiths. My words along would not do it justice.~ 
+==BO#HOLVI ~There is no single word to describe it. It is the home of artisans and many goodly faiths. My words alone would not do it justice.~ 
 ==L#OMB ~It's a big city, then?~
 ==BO#HOLVI ~Perhaps more so than any other.~
 ==L#OMB ~I doubt I will ever be able to enter it, then.~
@@ -82,7 +82,7 @@ Global("L#OMTeriBanter1","GLOBAL",0)~ THEN L#OMB OakMTeri01
 DO ~IncrementGlobal("L#OMTeriBanter1","GLOBAL",1)~
 ==BO#TERI ~Eugh, please don't call me that.~
 ==L#OMB ~It is your name. What is wrong with it?~
-==BO#TERI ~I'd much rather be called Teri. It's... friendlier.!~
+==BO#TERI ~I'd much rather be called Teri. It's... friendlier!~
 ==L#OMB ~I understand. I'll try to remember.~
 ==BO#TERI ~Yes, please do. If not, I'll steal your antlers and not give them back until you learn!~
 ==L#OMB ~That would be impossible. They're a part of me.~
@@ -111,10 +111,10 @@ CombatCounter(0)
 !StateCheck("L#OM",CD_STATE_NOTVALID)
 !StateCheck("O#KORIN",CD_STATE_NOTVALID)
 Global("L#OMKorinBanter","GLOBAL",0)~ THEN L#OMB OMawpsKorin01
-~You are a skilled ranger yourself, Korin. I've been observing for sometime.~
+~You are a skilled ranger yourself, Korin. I've been observing for some time.~
 DO ~IncrementGlobal("L#OMKorinBanter","GLOBAL",1)~ 
 ==BO#KORIN ~Your praise is misplaced, but... likewise.~
-==L#OMB ~Looks like you've also practices self-control when you hunt and track others. I've been expected to learn the same.~
+==L#OMB ~Looks like you also practice self-control when you hunt and track others. I've been expected to learn the same.~
 ==BO#KORIN ~You are a strong fighter, but your untamed anger often gets the best of you. Though... perhaps that is valuable to us, against the foes we face.~
 EXIT
 
@@ -147,7 +147,7 @@ DO ~IncrementGlobal("L#OMNellaBanter1","GLOBAL",1)~
 ==L#OMB ~I was wondering about the Oak. Was it always as great as it is now?~
 ==BO#NELLA ~It was bigger, once.~
 ==L#OMB ~That can't be possible. What do you mean, it 'was' bigger?~
-==BO#NELLA ~When I was a child, everything seemed bigger, once. Though the Great Oak has not lost any of its majesty to me, not its importance to me.~
+==BO#NELLA ~When I was a child, everything seemed bigger, once. Though the Great Oak has not lost any of its majesty to me, nor its importance to me.~
 EXIT
 
 CHAIN IF WEIGHT #-1 ~IsGabber("O#NELLA")

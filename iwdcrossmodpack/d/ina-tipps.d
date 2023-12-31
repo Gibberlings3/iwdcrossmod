@@ -64,5 +64,5 @@ Global("L#TippsInaBanter1","GLOBAL",3)~ THEN L#TIPB TIPPS-INA-BANTER-4
 DO ~IncrementGlobal("L#TippsInaBanter1","GLOBAL",1)~
 == L#INAB ~You are most probably right. But the longer you stare into the sky, the more you burn. Just like them.~
 == L#TIPB ~Then maybe stop looking at them and look in the same direction we look? It won't hurt to try, you know. So don't be too stubborn and just give it a shot. It won't kill you.~
-== L#INAB ~Maybe I should. Yet the stars will keep calling me, I'm sure of it. They lure me with their celestail taste.~
+== L#INAB ~Maybe I should. Yet the stars will keep calling me, I'm sure of it. They lure me with their celestial taste.~
 EXIT

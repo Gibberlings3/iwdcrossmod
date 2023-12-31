@@ -85,5 +85,5 @@ DO ~IncrementGlobal("C0KarihiDuskyBanter4","GLOBAL",1)~
 == BC0KARIH IF ~!Alignment("C0Karihi",MASK_GOOD)~ THEN ~For your own good.~
 == L#DUSKYB IF ~Alignment("C0Karihi",MASK_GOOD)~ THEN ~I thought you've grown past that?~
 == BC0KARIH IF ~Alignment("C0Karihi",MASK_GOOD)~ THEN ~Perhaps. I could always make one last exception.~
-== L#DUSKYB IF ~Alignment("C0Karihi",MASK_GOOD)~ THEN ~Ha! I'll pass, but I your attitude. Never change, Karihi.~
+== L#DUSKYB IF ~Alignment("C0Karihi",MASK_GOOD)~ THEN ~Ha! I'll pass, but I like your attitude. Never change, Karihi.~
 EXIT

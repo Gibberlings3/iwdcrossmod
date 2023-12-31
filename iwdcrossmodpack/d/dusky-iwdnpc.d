@@ -41,7 +41,7 @@ DO ~SetGlobal("DuskyHolvirBanter","GLOBAL",6)~
 ==BO#HOLVI ~Yes, I'm from the City of Splendors. I came here because... Hrothgar needed my help.~
 ==BO#KORIN IF ~IsGabber("O#KORIN") !StateCheck("O#KORIN",CD_STATE_NOTVALID)~ THEN ~And we truly wanted to help.~
 ==L#DUSKYB ~Erm... I didn't know that. I... hope that you found your way of dealing with what happened to him.~
-==BO#HOLVI ~We all may lose a friend on some point. What we should do, if remember them and fight for what they would fight.~
+==BO#HOLVI ~We all may lose a friend on some point. What we should do is remember them and fight for what they would fight.~
 ==L#DUSKYB ~I'll take that as a yes.~
 ==BO#HOLVI ~I had no choice but accept his fate, Dusky. Wouldn't you do the same?~
 ==L#DUSKYB ~I don't know. I truly have no idea...~
@@ -69,7 +69,7 @@ DO ~SetGlobal("DuskyTeriBanter","GLOBAL",6)~
 ==BO#TERI ~Good! If you won't tell me to make a similar promise, we can play. I actually have my own deck of cards.~
 ==L#DUSKYB ~You're a demon in disguise.~
 ==BO#TERI ~... and a set of cards!~
-==BO#SEVER IF ~IsGabber("O#SEVERN") !StateCheck("O#SEVERN",CD_STATE_NOTVALID)~ THEN ~I'm sorry you say that, Dusky, but you can't win with her. I'm afraid no one ever did.~
+==BO#SEVER IF ~IsGabber("O#SEVERN") !StateCheck("O#SEVERN",CD_STATE_NOTVALID)~ THEN ~I'm sorry to say that, Dusky, but you can't win with her. I'm afraid no one ever does.~
 EXIT
 
 
@@ -117,7 +117,7 @@ EXIT
 CHAIN IF WEIGHT #-1 ~IsGabber(Myself) IsGabber("O#NELLA") See("O#NELLA") !StateCheck("L#DUSKY",CD_STATE_NOTVALID) !StateCheck("O#NELLA",CD_STATE_NOTVALID) Global("DuskyNellaBanter2","GLOBAL",1)
 AreaCheck("AR4000")
 PartyHasItem("HEARTGM")~ THEN L#DUSKYB DuskyNella2
-~What would you do if I sold the Heartsone Gem, Nella? (grin)~
+~What would you do if I sold the Heartstone Gem, Nella? (grin)~
 DO ~SetGlobal("DuskyNellaBanter2","GLOBAL",2)~ 
 ==BO#NELLA ~Don't even joke like that! This isn't just some nice looking jewel, but our hope. Do not even dare to touch it.~
 ==L#DUSKYB ~I was just joking... Huh, you should learn how to tell when people are telling jokes or--~

@@ -85,7 +85,7 @@ See("L#URCHIN")
 CombatCounter(0)
 !See([ENEMY])
 LevelGT("C0KARIHI",4)
-Global("C0KarihiUrchinRestTalk","GLOBAL",1)~ THEN BC0KARIH KARIHI-URCHIN-BANTER-2
+Global("C0KarihiUrchinRestTalk","GLOBAL",3)~ THEN BC0KARIH KARIHI-URCHIN-BANTER-2
 ~Well, it appears that attempting to scare you into submission using my magic is a futile effort.~ [C0BLANK]
 DO ~IncrementGlobal("C0KarihiUrchinRestTalk","GLOBAL",1)~
 == L#URCHIB ~Ur, not... scared. Ka-ri-h... nice. Makes Ur... warm.~

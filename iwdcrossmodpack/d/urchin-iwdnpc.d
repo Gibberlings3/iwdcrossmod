@@ -55,7 +55,7 @@ DO ~IncrementGlobal("L#UrchinHolvirBanter1","GLOBAL",1)~
 ==BO#HOLVI ~Do not invoke his name lightly, creature. Though you are correct, I follow the Maimed God and his dogma.~
 ==L#URCHIB ~Dog-ma? Dog... Ur... likes...~
 ==BO#HOLVI ~That... is not the meaning of the word. I doubt you would understand, but I follow the path of Tyr, and uphold the ideals which he stands for.~
-==BO#HOLVI ~It is not an easy journey, and for some, it is an lifelong one.~
+==BO#HOLVI ~It is not an easy journey, and for some, it is a lifelong one.~
 ==L#URCHIB ~Life... long... ugh...~
 ==L#URCHIB ~Feet... will... hurt?~
 ==BO#HOLVI ~Indeed. The dutiful life is not a comfortable one. But with duty comes clarity and purpose.~

@@ -14,7 +14,7 @@ DO ~IncrementGlobal("L#TIPSevernBanter","GLOBAL",1)~
 ==L#TIPB ~I think I've heard it before. In fact, I might've met the one who composed it. There was this bard from Mosstone... Jackoo? I think that was the name.~
 ==BO#SEVER ~You've met Jackoo Cloverglade? My friend, I hope you realize what a rare opportunity you had. Did you speak with him?~
 ==L#TIPB ~You bet I tried. Unfortunately, there were... hard circumstances. He was running out of an inn in just his undergarments with two women and a strange pink mist following him.~
-==BO#SEVER ~Ah, the endless surprising stuggles of a bard... regardless, it must have been an unforgettable memory.~
+==BO#SEVER ~Ah, the endless surprising struggles of a bard... regardless, it must have been an unforgettable memory.~
 ==L#TIPB ~I'll never forget it, that's for sure.~
 ==BO#SEVER ~Don't be so surprised. Such things happen to all creative souls... even ones as skilled as Jackoo of the Seven Lands.~
 EXIT
@@ -46,9 +46,9 @@ CombatCounter(0)
 !StateCheck("L#TIP",CD_STATE_NOTVALID)
 !StateCheck("O#HOLVIR",CD_STATE_NOTVALID)
 Global("L#TIPHolvirBanter","GLOBAL",0)~ THEN L#TIPB TipHolvir01
-~I've met a lot of people my life. You're the first one who's got me at a loss, paladin. I don't know what to say to you—we've got nothing in common.~
+~I've met a lot of people in my life. You're the first one who's got me at a loss, paladin. I don't know what to say to you—we've got nothing in common.~
 DO ~IncrementGlobal("L#TIPHolvirBanter","GLOBAL",1)~ 
-==BO#HOLVI ~There is no need to force yourself to find common ground where there is none. I fear you will only set yourself up for diappointment. If you would prefer to remain distant, I can understand.~
+==BO#HOLVI ~There is no need to force yourself to find common ground where there is none. I fear you will only set yourself up for disappointment. If you would prefer to remain distant, I can understand.~
 ==L#TIPB ~Good enough. Let's just not bother each other, then. Simple and quiet. I like that just fine.~
 EXIT
 

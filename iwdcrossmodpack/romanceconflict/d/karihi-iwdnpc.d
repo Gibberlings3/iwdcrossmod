@@ -39,7 +39,7 @@ CHAIN O#NELLA karihinella.conflict.4
 == O#NELLA ~I'm sorry.~
 == C0KARIHJ ~Don't be. But do come to me for advice should you find yourself struggling, Nella. I'm certain a withdrawn woman such as you will need it.~
 == O#NELLA ~Well... alright. Perhaps I may indeed take you up on that offer.~
-DO ~SetGlobal("C0KarihiRomanceActive","GLOBAL",0)~ EXIT
+DO ~SetGlobal("C0KarihiRomanceActive","GLOBAL",3)~ EXIT
 
 CHAIN IF WEIGHT #-1 ~Global("C0KarihiTeriConflict","GLOBAL",2)~ THEN O#TERI karihiteri.conflict
 ~Hey, what's with that glare, Karihi? What have I done wrong this time?~

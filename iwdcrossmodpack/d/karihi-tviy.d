@@ -6,9 +6,9 @@ See("L#TVIY")
 CombatCounter(0)
 !See([ENEMY])
 Global("L#KarihiTviyBanter1","GLOBAL",0)~ THEN BC0KARIH KARIHI-TVIY-BANTER-1
-~I would prefer you to stand at a distance, dirt-bag, unless you'd rather be changed into a small pong of magma.~ 
+~I would prefer you to stand at a distance, dirt-bag, unless you'd rather be changed into a small pond of magma.~ 
 DO ~IncrementGlobal("L#KarihiTviyBanter1","GLOBAL",1)~
-== L#TVIYB ~DIRT, EARTH and MAGMA or but a three different faces of similar power. Of similar ELEMENT we all DIG THROUGH.~
+== L#TVIYB ~DIRT, EARTH and MAGMA are but a three different faces of similar power. Of similar ELEMENT we all DIG THROUGH.~
 == L#TVIYB ~And THAT means I am NOT afraid of your threats, GENASI.~
 == BC0KARIH ~Threats? I do not make some petty threats, T'viy. I am simply setting conditions for your presence in this group and lines that should not be crossed.~
 == BC0KARIH ~Keep them in mind, gnome, and perhaps you'll be able to see the end of this adventure. Cross the line, and your future may not be as bright.~

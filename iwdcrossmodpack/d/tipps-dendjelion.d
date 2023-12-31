@@ -70,7 +70,7 @@ IF~~THEN REPLY ~Hey, talk when we've stopped. You're slowing me down.~ EXTERN L#
 
 CHAIN L#TIPB L#DENDJELION-TIPPS-BANTER-4-1
 ~Ha! Don't be jealous, <PLAYER1>.~
-==L#TIPB ~I've made a point to break every common perception long-legged folk think about ouw kin. We're just not respected enough, being short and known for our pranks and smoking.~
+==L#TIPB ~I've made a point to break every common perception long-legged folk think about our kin. We're just not respected enough, being short and known for our pranks and smoking.~
 ==L#DENDJB ~I know. It's annoyin' as hell.~
 ==L#TIPB ~We have to be a part of these great tales so they'll know that we've got powerful sorcerers and blackguards among us, don't you agree?~
 EXIT
@@ -154,7 +154,7 @@ IF~~THEN REPLY ~It'll take more than that to fluster me.~ EXTERN L#DENDJB L#DEND
 IF~~THEN REPLY ~Yes, do that. I don't want to know anything about what the two of you do when you're alone.~ EXTERN L#DENDJB L#DENDJELION-TIPPS-BANTER-6-7
 
 CHAIN L#DENDJB L#DENDJELION-TIPPS-BANTER-6-6
-~You heard the boss, Tipps! <PRO_HESHE>'s givin'' us the okay, haha!~
+~You heard the boss, Tipps! <PLAYER1>'s givin'' us the okay, haha!~
 ==L#TIPB ~Dendjelion, you're making this too damn awkward.~
 ==L#DENDJB ~What's awkward about this? The fact you don't want to spend your nights alone, anymore? That's not somethin' to be ashamed of.~
 ==L#DENDJB ~Anyway, we've talked too long. Let's get to killin' instead for now.~

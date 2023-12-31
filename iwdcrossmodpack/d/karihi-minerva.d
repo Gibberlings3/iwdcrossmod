@@ -63,7 +63,7 @@ DO ~IncrementGlobal("C0KarihiMinervaFoodBanter","GLOBAL",1)~
 == BC0MMin ~Oh, come on. They're not that bad.~
 == BC0KARIH ~I refuse to believe any of your food was ever meant for consumption by sapient creatures. It boggles the mind.~
 == BC0MMin ~You're almost as bad as my ex-husband. "Oh, no need to cook for me, I'm heading out." He would say, every evening. One would think he was trying to avoid my cooking!~
-== BC0KARIH ~No, you silly creature. That is EXACTLY what he was going, without a single doubt.~
+== BC0KARIH ~No, you silly creature. That is EXACTLY what he was doing, without a single doubt.~
 == BC0MMin ~That's what my mother kept telling me. And my sister. And my aunt, too. I just don't get it.~
 EXIT
 

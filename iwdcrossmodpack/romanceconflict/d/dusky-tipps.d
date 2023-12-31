@@ -16,7 +16,7 @@ CHAIN L#TIPJ DUSKY-TIPPS-ROMCON01
 DO ~SetGlobal("L#TippsRomanceActive","GLOBAL",3)~ EXIT // KILL TIPPS ROMANCE
 
 CHAIN L#DUSKYJ DUSKY-TIPPS-ROMCON02
-~So I guess I've been wasting my time all alone?~
+~So I guess I've been wasting my time all along?~
 ==L#TIPJ ~...~
 ==L#DUSKYJ  ~*sigh* I guess we didn't make any promises or anything, so... he's all yours, Tipps.~
 DO ~SetGlobal("DuskyRomanceActive","GLOBAL",3)~ EXIT // KILL DUSKY ROMANCE

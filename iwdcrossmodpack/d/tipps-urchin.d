@@ -69,7 +69,7 @@ Global("L#TippsUrchinBanter1","GLOBAL",3)~ THEN L#TIPB L#TippsUrchinBanter4
 ~...no no no. Urchin. Please.~
 DO ~IncrementGlobal("L#TippsUrchinBanter1","GLOBAL",1)~
 == L#URCHIB ~Muh?~
-== L#TIPB ~You need to work non your pronunciation. To say 's' properly, you need to put your tongue on alveolar ridge. Then, let the air flow.~
+== L#TIPB ~You need to work on your pronunciation. To say 's' properly, you need to put your tongue on alveolar ridge. Then, let the air flow.~
 == L#URCHIB ~En...um... ri-dge? Sh...?~
 == IF_FILE_EXISTS BC0KARIH IF ~IsValidForPartyDialog("C0KARIHI")~ THEN ~You are wasting your time.~
 == IF_FILE_EXISTS BC0KARIH IF ~IsValidForPartyDialog("L#TIP")~ THEN ~Hey, mind your own business. I can use my time however I like.~

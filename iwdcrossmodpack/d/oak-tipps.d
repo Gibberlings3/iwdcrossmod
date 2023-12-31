@@ -6,7 +6,7 @@ See("L#TIP")
 CombatCounter(0)
 !See([ENEMY])
 Global("L#TippsOMawBanter1","GLOBAL",0)~ THEN L#OMB L#TippsOMawBanter1
-~I don't think I've ever seen anyone with magic to control the forces of natures like yours. It's not like that of the Rashemi witches, the wychlaran, but neither is it like the magic of the Red Wizards.~
+~I don't think I've ever seen anyone with magic to control the forces of nature like yours. It's not like that of the Rashemi witches, the wychlaran, but neither is it like the magic of the Red Wizards.~
 DO ~IncrementGlobal("L#TippsOMawBanter1","GLOBAL",1)~
 == L#TIPB ~It's a very unique type of magic. I'm not the only geomantic arcanist out there, but I'm the only one I know.~
 == L#OMB ~Hmm. I prefer the energies you summon. It is far closer to nature.~
@@ -50,7 +50,7 @@ DO ~IncrementGlobal("L#TippsOMawBanter1","GLOBAL",1)~
 == L#OMB ~No. I have no desire to look more like men, or elves, or any other being. I am comfortable in my own skin, and I care not for what others think of it.~
 == L#TIPB ~Well, it's easier to get by in life when your features are familiar. Don't get me wrong, though! Sometimes I'm tired of being mistaken for a puny trickster or misfit, like others of my kind.~
 == L#OMB ~You are recognized, at least. Most do not even know what I am.~
-== L#TIPB ~They would, if you made yourself known though tales. Like the one you're part of now, right?~
+== L#TIPB ~They would, if you made yourself known through tales. Like the one you're part of now, right?~
 == L#OMB ~Perhaps. Only time will tell if I am remembered.~
 EXIT
 
