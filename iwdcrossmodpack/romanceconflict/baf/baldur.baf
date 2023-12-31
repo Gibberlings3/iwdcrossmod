@@ -346,3 +346,86 @@ THEN
   RESPONSE #100
 	SetGlobal("L#LannaRomanceActive","GLOBAL",3)
 END
+
+//CASSIA
+
+IF
+	InParty("AWCass")
+	InParty("O#HOLVIR")
+  Global("O#HolvirMatch","GLOBAL",2)
+  Global("AWCass-RomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("AWCass-RomanceActive","GLOBAL",3)
+END
+
+
+IF
+	InParty("AWCass")
+	InParty("C0MMIN")
+	Global("C0MMinRomanceActive","GLOBAL",2)
+	Global("AWCass-RomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("AWCass-RomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty("O#KORIN")
+	InParty("AWCass")
+	Global("AWCass-RomanceActive","GLOBAL",1)
+	Global("O#KorinMatch","GLOBAL",2)
+THEN
+  RESPONSE #100
+	SetGlobal("AWCass-RomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty("L#DUSKY")
+	InParty("AWCass")
+	Global("AWCass-RomanceActive","GLOBAL",1)
+	Global("DuskyRomanceActive","GLOBAL",2)
+THEN
+  RESPONSE #100
+	SetGlobal("AWCass-RomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty("L#INA")
+	InParty("AWCass")
+	Global("AWCass-RomanceActive","GLOBAL",1)
+	Global("L#InaRomanceActive","GLOBAL",2)
+THEN
+  RESPONSE #100
+	SetGlobal("AWCass-RomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty("C0KARIHI")
+	InParty("AWCass")
+	Global("AWCass-RomanceActive","GLOBAL",1)
+	Global("C0KarihiRomanceActive","GLOBAL",2)
+THEN
+  RESPONSE #100
+	SetGlobal("AWCass-RomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty("L#LANNA")
+	InParty("AWCass")
+	Global("AWCass-RomanceActive","GLOBAL",1)
+	Global("L#LannaRomanceActive","GLOBAL",2)
+THEN
+  RESPONSE #100
+	SetGlobal("AWCass-RomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty("L#OM")
+	InParty("AWCass")
+	Global("AWCass-RomanceActive","GLOBAL",1)
+	Global("L#OMRomanceActive","GLOBAL",2)
+THEN
+  RESPONSE #100
+	SetGlobal("AWCass-RomanceActive","GLOBAL",3)
+END

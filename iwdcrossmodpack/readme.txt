@@ -5,8 +5,9 @@ Currently, this mod includes content for the following NPCs:
     Holvir, Korin, Nella, Severn and Teri by Kulyok
     Minerva and Karihi by AionZ
     Dendjelion, Dusky, Ina, Oak-Maw, Orra, Tipps, T'viy, Urchin, L'anna and Hommet by Lava Del'Vortel
+    Cassia by Arvendor 
 
-Banters
+BANTERS
 
     1 banter between Lava's Dendjelion and Kulyok's Holvir (see Conflicts)
     3 banters between Lava's Dendjelion and Kulyok's Korin
@@ -127,9 +128,24 @@ Banters
     2 banters between AionZ's Minerva and Lava's Tipps
     2 banters between AionZ's Minerva and Lava's T'viy
     3 banters between AionZ's Minerva and Lava's Urchin
+    2 banters between Arvendor's Cassia and Lava's L'anna
+    3 banters between Arvendor's Cassia and Lava's T'viy (see Conflicts)
+    3 banters between Arvendor's Cassia and Lava's Dendjelion (see Conflicts)
+    1 banter between Arvendor's Cassia and Lava's Hommet
+    2 banters between Arvendor's Cassia and Lava's Ina
+    2 banters between Arvendor's Cassia and Lava's Tipps
+    2 banters between Arvendor's Cassia and Lava's Urchin
+    3 banters between Arvendor's Cassia and Lava's Orra
+    2 banters between Arvendor's Cassia and Lava's Oak-Maw
+    3 banters between Arvendor's Cassia and Lava's Dusky
+    2 banters between Arvendor's Cassia and Kulyok's Teri
+    2 banters between Arvendor's Cassia and Kulyok's Severn
+    2 banters between Arvendor's Cassia and Kulyok's Nella
+    2 banters between Arvendor's Cassia and Kulyok's Holvir
+    2 banters between Arvendor's Cassia and Kulyok's Korin
     1 'special' dialogue for AionZ's Minerva when resting at the Evening Shade
 
-Conflicts
+CONFLICTS:
 
 Many of the mod NPCs have their own romances. The mod includes optional romantic conflicts between NPCs with romances with PCs of the compatible gender:
 
@@ -138,7 +154,11 @@ Female: Ina, Holvir, Korin
 Both: Dendjelion, Minerva, Oak-Maw, Tipps
 
 L'anna's romance starts later in game. Her romance does not include conflict talks, but she won't start a romance if you are romantically involved with another NPC.
+Cassia will no longer start any romantic talks if you reach advanced romance state with any of the other romanceable characters. 
 
-Additionally, Holvir and Dendjelion will have a conflict with each other (this is optional by Kulyok's request). This conflict may potentially result in the two fighting each other, unless the PC has a Charisma of 18+.
+Additionally, the mod includes other conflicts - some of them are due to uncompatible world views na ideologies. These conflicts are optional and may be skipped during the setup: 
+- Holvir and Dendjelion will have a conflict with each other: this conflict may potentially result in the two fighting each other, unless the PC has a Charisma of 18+;
+- Cassia and Dendjelion will have a conflict with may not be stopped when triggered; furthermore, Cassia won't accept Dendjelion killing Holvir or Noon (Dendjelion's opponent) - that is also coded to happen directly into Cassia NPC and may happen with or without IWD Crossmod Banter Pack installed;
+- Cassia and T'viy will have a conflict which may be stopped by the main character if that character's charisma is high enough (13+).
 
 If Dendjelion kills Holvir, the PC can choose (and be encouraged by some party members) to avenge him. Sparing Dendjelion leads to a -2 penalty to Reputation and breaks romance with Korin, Nella, Teri and Minerva. Additionally, Dendjelion will have new banters with other party members referencing the conflict, with Korin and Nella potentially choosing to leave the party unless the PC is persuasive enough. 

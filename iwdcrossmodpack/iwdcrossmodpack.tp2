@@ -1,6 +1,6 @@
 BACKUP ~IWDCrossmodPack/backup~
 AUTHOR ~The Artisan (AionZ)~
-VERSION ~1.4~
+VERSION ~1.5~
 
 README ~IWDCrossmodPack/readme.txt~
 
@@ -97,12 +97,16 @@ END
 */
 	  OUTER_SET bantprob1 = 25
 	  OUTER_SET bantprob2 = 0
+	  
 // Banter initiation script - hopefully I find a better way
 	EXTEND_TOP ~BALDUR.BCS~ ~%MOD_FOLDER%/baf/baldur.baf~ EVAL
+
 	COMPILE ~%MOD_FOLDER%/d/banterfiles.D~
 	
-ACTION_IF MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
-  PRINT ~Patching banter .d files for Kulyok's Icewind Dale NPCs...~
+/* ACTION_IF MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN  
+  PRINT ~Patching banter .d files for Kulyok's Icewind Dale NPCs...~ */ // it's actually for all mods and it just adds interdia.2da lines
+  
+  PRINT ~Adding interdia.2da entries for all included NPCs...~
   
 	APPEND ~interdia.2da~ ~O#HOLVIR BO#HOLVI BO#HOLVI~ UNLESS ~O#HOLVIR~
 	APPEND ~interdia.2da~ ~O#KORIN BO#KORIN BO#KORIN~ UNLESS ~O#KORIN~
@@ -119,7 +123,9 @@ ACTION_IF MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
 	APPEND ~interdia.2da~ ~L#OM L#OMB L#OMB~ UNLESS ~L#OM~
 	APPEND ~interdia.2da~ ~L#HOMM L#HOMMB L#HOMMB~ UNLESS ~L#HOMM~
 	APPEND ~interdia.2da~ ~L#LANNA L#LANNAB L#LANNAB~ UNLESS ~L#LANNA~
-END
+  APPEND ~interdia.2da~ ~AWCass AWCassB AWCassB~ UNLESS ~AWCass~
+  
+//END
 
 // Athanasios - Caedriel
 ACTION_IF MOD_IS_INSTALLED ~ATHANASIOSNPC/ATHANASIOSNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~CAEDRIELNPC/CAEDRIELNPC.TP2~ ~0~ THEN BEGIN
@@ -291,7 +297,7 @@ OUTER_WHILE (!(IS_AN_INT ~conflict~) OR (~conflict~ > 0x2) OR (~conflict~ < 0x1)
 END
       ACTION_IF ("conflict" = 1) THEN BEGIN
 	  
-	COMPILE ~%MOD_FOLDER%/d/Dendjelion-conflict.d~
+	COMPILE ~%MOD_FOLDER%/d/Dendjelion-conflictiwd.d~
 	EXTEND_TOP ~L#DENDJ.BCS~ ~%MOD_FOLDER%/baf/Dendjelion.baf~
 	EXTEND_TOP ~O#HOLVIR.BCS~ ~%MOD_FOLDER%/baf/Holvir.baf~
       END
@@ -854,6 +860,112 @@ ACTION_IF MOD_IS_INSTALLED ~LANNA/LANNA.TP2~ ~0~ AND MOD_IS_INSTALLED ~HOMMET/HO
   PRINT ~Adding crossmod for Lava's Hommet and Lava's L'anna~
 	COMPILE ~%MOD_FOLDER%/d/hommet-lanna.d~
 END
+
+// Cassia - IWD NPC
+ACTION_IF MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2.TP2~ ~0~ AND MOD_IS_INSTALLED ~CassiaNPC/CassiaNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Arvendor's Cassia and Kulyok's Icewind Dale NPCs~
+	COMPILE ~%MOD_FOLDER%/d/cassia-iwdnpc.d~
+END
+
+// Cassia - L'anna
+ACTION_IF MOD_IS_INSTALLED ~LANNA/LANNA.TP2~ ~0~ AND MOD_IS_INSTALLED ~CassiaNPC/CassiaNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Arvendor's Cassia and Lava's L'anna~
+	COMPILE ~%MOD_FOLDER%/d/cassia-lanna.d~
+END
+
+// Cassia - Dusky
+ACTION_IF MOD_IS_INSTALLED ~DUSKY/DUSKY.TP2~ ~0~ AND MOD_IS_INSTALLED ~CassiaNPC/CassiaNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Arvendor's Cassia and Lava's Dusky~
+	COMPILE ~%MOD_FOLDER%/d/cassia-Dusky.d~
+END
+
+// Cassia - Oak-Maw
+ACTION_IF MOD_IS_INSTALLED ~OAKMAW/OAKMAW.TP2~ ~0~ AND MOD_IS_INSTALLED ~CassiaNPC/CassiaNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Arvendor's Cassia and Lava's Oak-Maw~
+	COMPILE ~%MOD_FOLDER%/d/cassia-oakmaw.d~
+END
+
+// Cassia - Orra
+ACTION_IF MOD_IS_INSTALLED ~ORRA/ORRA.TP2~ ~0~ AND MOD_IS_INSTALLED ~CassiaNPC/CassiaNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Arvendor's Cassia and Lava's Orra~
+	COMPILE ~%MOD_FOLDER%/d/cassia-orra.d~
+END
+
+// Cassia - Urchin
+ACTION_IF MOD_IS_INSTALLED ~URCHIN/URCHIN.TP2~ ~0~ AND MOD_IS_INSTALLED ~CassiaNPC/CassiaNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Arvendor's Cassia and Lava's Urchin~
+	COMPILE ~%MOD_FOLDER%/d/cassia-urchin.d~
+END
+
+// Cassia - Tipps
+ACTION_IF MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ AND MOD_IS_INSTALLED ~CassiaNPC/CassiaNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Arvendor's Cassia and Lava's Tipps~
+	COMPILE ~%MOD_FOLDER%/d/cassia-tipps.d~
+END
+
+// Cassia - Ina
+ACTION_IF MOD_IS_INSTALLED ~INA/INA.TP2~ ~0~ AND MOD_IS_INSTALLED ~CassiaNPC/CassiaNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Arvendor's Cassia and Lava's Ina~
+	COMPILE ~%MOD_FOLDER%/d/cassia-ina.d~
+END
+
+// Cassia - Hommet
+ACTION_IF MOD_IS_INSTALLED ~HOMMET/HOMMET.TP2~ ~0~ AND MOD_IS_INSTALLED ~CassiaNPC/CassiaNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Arvendor's Cassia and Lava's Hommet~
+	COMPILE ~%MOD_FOLDER%/d/cassia-hommet.d~
+END
+
+// Cassia - Dendjelion
+ACTION_IF MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ AND MOD_IS_INSTALLED ~CassiaNPC/CassiaNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Arvendor's Cassia and Lava's Dendjelion~
+	COMPILE ~%MOD_FOLDER%/d/cassia-dendjelion.d~
+END
+
+ACTION_IF MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ AND MOD_IS_INSTALLED ~CassiaNPC/CassiaNPC.TP2~ ~0~ THEN BEGIN
+PRINT ~Install optional conflict between Arvendor's Cassia and Lava's Dendjelion?~
+
+PRINT ~Please choose one of the following:
+[1] Yes
+[2] No~
+
+OUTER_SPRINT ~conflict-cass-dendj~ ~placeholder_value~
+OUTER_WHILE (!(IS_AN_INT ~conflict-cass-dendj~) OR (~conflict-cass-dendj~ > 0x2) OR (~conflict-cass-dendj~ < 0x1)) BEGIN
+  PRINT ~Please select 1 or 2 and press Enter.~
+  ACTION_READLN ~conflict-cass-dendj~
+END
+      ACTION_IF ("conflict-cass-dendj" = 1) THEN BEGIN
+	     COMPILE ~%MOD_FOLDER%/d/cassia-dendjelion-c.d~
+      END
+      
+      ACTION_IF ("conflict-cass-dendj" = 2) THEN BEGIN
+      END
+      END
+      
+// Cassia - T'viy
+ACTION_IF MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ AND MOD_IS_INSTALLED ~CassiaNPC/CassiaNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Arvendor's Cassia and Lava's T'viy~
+	COMPILE ~%MOD_FOLDER%/d/cassia-tviy.d~
+END
+
+ACTION_IF MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ AND MOD_IS_INSTALLED ~CassiaNPC/CassiaNPC.TP2~ ~0~ THEN BEGIN
+PRINT ~Install optional conflict between Arvendor's Cassia and Lava's T'viy?~
+
+PRINT ~Please choose one of the following:
+[1] Yes
+[2] No~
+
+OUTER_SPRINT ~conflict-cass-tviy~ ~placeholder_value~
+OUTER_WHILE (!(IS_AN_INT ~conflict-cass-tviy~) OR (~conflict-cass-tviy~ > 0x2) OR (~conflict-cass-tviy~ < 0x1)) BEGIN
+  PRINT ~Please select 1 or 2 and press Enter.~
+  ACTION_READLN ~conflict-cass-tviy~
+END
+      ACTION_IF ("conflict-cass-tviy" = 1) THEN BEGIN
+	     COMPILE ~%MOD_FOLDER%/d/cassia-tviy-c.d~
+      END
+      
+      ACTION_IF ("conflict-cass-tviy" = 2) THEN BEGIN
+      END
+      END
 
 // Minerva - Special Dialogue
 ACTION_IF MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ THEN BEGIN
