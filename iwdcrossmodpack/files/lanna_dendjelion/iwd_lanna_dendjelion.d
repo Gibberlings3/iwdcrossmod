@@ -1,0 +1,50 @@
+ CHAIN IF WEIGHT #-1
+~InParty("L#DENDJELION")
+IsGabber("L#LANNA")
+!StateCheck("L#DENDJELION",CD_STATE_NOTVALID)
+!StateCheck("L#LANNA",CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+Global("L#LANNADendjelionBanter1","GLOBAL",0)~ THEN L#DENDJB LANNA-DENDJELION-1
+@0
+DO ~IncrementGlobal("L#LANNADendjelionBanter1","GLOBAL",1)~
+== L#LANNAB @1
+== L#LANNAB @2
+== L#LANNAB @3
+== L#DENDJB @4
+== L#DENDJB @5
+== L#LANNAB @6
+EXIT
+
+CHAIN IF WEIGHT #-1
+~InParty("L#DENDJELION")
+IsGabber("L#LANNA")
+!StateCheck("L#DENDJELION",CD_STATE_NOTVALID)
+!StateCheck("L#LANNA",CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+Global("L#LANNADendjelionBanter1","GLOBAL",1)~ THEN L#DENDJB LANNA-DENDJELION-2
+@7
+DO ~IncrementGlobal("L#LANNADendjelionBanter1","GLOBAL",1)~
+== L#LANNAB @8
+== L#DENDJB @9
+== L#LANNAB @10
+== L#DENDJB @11
+EXIT
+
+CHAIN IF WEIGHT #-1
+~InParty("L#DENDJELION")
+IsGabber("L#LANNA")
+!StateCheck("L#DENDJELION",CD_STATE_NOTVALID)
+!StateCheck("L#LANNA",CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+Global("L#LANNADendjelionBanter1","GLOBAL",2)~ THEN L#DENDJB LANNA-DENDJELION-3
+@12
+DO ~IncrementGlobal("L#LANNADendjelionBanter1","GLOBAL",1)~
+== L#LANNAB @13
+== L#LANNAB @14
+== L#DENDJB @15
+EXIT
+
+

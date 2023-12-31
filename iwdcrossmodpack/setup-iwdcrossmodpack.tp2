@@ -1,0 +1,169 @@
+BACKUP ~weidu_external/iwdcrossmodpack/backup~
+SUPPORT ~https://www.gibberlings3.net/forums/forum/216-crossmod-banter-pack-iwd/~
+
+ALWAYS
+
+  OUTER_SET strict_language_enforcement = 0
+
+  ACTION_IF NOT VARIABLE_IS_SET cd_iwdcrossmodpack_always THEN BEGIN // check to make this happen only once per install
+    INCLUDE ~iwdcrossmodpack/lib/always.tpa~
+  END
+  
+END
+
+VERSION ~v2 (dev branch)~ 
+
+README ~iwdcrossmodpack/readme-iwdcrossmodpack.html~
+
+AUTO_TRA ~%tra_location%/%s~
+
+LANGUAGE ~English~ ~english~ ~iwdcrossmodpack/languages/english/weidu.tra~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Pre-v2 component                                 \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @1000 DESIGNATED 0
+DEPRECATED @101 // in case the player is updating from an old < v2 install, force it to uninstall and use the new components instead
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// banter timer                                     \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+/////                                                  \\\\\
+///// five minutes                                     \\\\\
+/////                                                  \\\\\
+
+BEGIN @5001 DESIGNATED 50
+SUBCOMPONENT @5000
+//REQUIRE_PREDICATE GAME_IS ~iwd how totlm iwdee~ @100 // only iwdee for now
+REQUIRE_PREDICATE GAME_IS ~iwdee~ @100
+LABEL ~cd_crossmod_banter_pack_iwd_banter_timer_5~
+
+OUTER_SET banttime  = 300
+INCLUDE ~%MOD_FOLDER%/misc/timing.tpa~
+
+/////                                                  \\\\\
+///// 10 minutes                                       \\\\\
+/////                                                  \\\\\
+
+BEGIN @5002 DESIGNATED 51
+SUBCOMPONENT @5000
+//REQUIRE_PREDICATE GAME_IS ~iwd how totlm iwdee~ @100 // only iwdee for now
+REQUIRE_PREDICATE GAME_IS ~iwdee~ @100
+LABEL ~cd_crossmod_banter_pack_iwd_banter_timer_10~
+
+OUTER_SET banttime  = 600
+INCLUDE ~%MOD_FOLDER%/misc/timing.tpa~
+
+/////                                                  \\\\\
+///// 15 minutes                                       \\\\\
+/////                                                  \\\\\
+
+BEGIN @5003 DESIGNATED 52
+SUBCOMPONENT @5000
+//REQUIRE_PREDICATE GAME_IS ~iwd how totlm iwdee~ @100 // only iwdee for now
+REQUIRE_PREDICATE GAME_IS ~iwdee~ @100
+LABEL ~cd_crossmod_banter_pack_iwd_banter_timer_15~
+
+OUTER_SET banttime  = 900
+INCLUDE ~%MOD_FOLDER%/misc/timing.tpa~
+
+/////                                                  \\\\\
+///// 30 minutes                                       \\\\\
+/////                                                  \\\\\
+
+BEGIN @5004 DESIGNATED 53
+SUBCOMPONENT @5000
+//REQUIRE_PREDICATE GAME_IS ~iwd how totlm iwdee~ @100 // only iwdee for now
+REQUIRE_PREDICATE GAME_IS ~iwdee~ @100
+LABEL ~cd_crossmod_banter_pack_iwd_banter_timer_30~
+
+OUTER_SET banttime  = 1800
+INCLUDE ~%MOD_FOLDER%/misc/timing.tpa~
+
+/////                                                  \\\\\
+///// 45 minutes                                       \\\\\
+/////                                                  \\\\\
+
+BEGIN @5005 DESIGNATED 54
+SUBCOMPONENT @5000
+//REQUIRE_PREDICATE GAME_IS ~iwd how totlm iwdee~ @100 // only iwdee for now
+REQUIRE_PREDICATE GAME_IS ~iwdee~ @100
+LABEL ~cd_crossmod_banter_pack_iwd_banter_timer_45~
+
+OUTER_SET banttime  = 2700
+INCLUDE ~%MOD_FOLDER%/misc/timing.tpa~
+
+/////                                                  \\\\\
+///// 60 minutes                                       \\\\\
+/////                                                  \\\\\
+
+BEGIN @5006 DESIGNATED 55
+SUBCOMPONENT @5000
+//REQUIRE_PREDICATE GAME_IS ~iwd how totlm iwdee~ @100 // only iwdee for now
+REQUIRE_PREDICATE GAME_IS ~iwdee~ @100
+LABEL ~cd_crossmod_banter_pack_iwd_banter_timer_60~
+
+OUTER_SET banttime  = 3600
+INCLUDE ~%MOD_FOLDER%/misc/timing.tpa~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// IWD crossmod                                     \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @1000 DESIGNATED 10
+//REQUIRE_PREDICATE GAME_IS ~iwd how totlm iwdee~ @100 // only iwdee for now
+REQUIRE_PREDICATE GAME_IS ~iwdee~ @100
+LABEL ~cd_crossmod_banter_pack_iwd~
+
+OUTER_SET exp_check = 0
+OUTER_SET conflict_check = 0
+INCLUDE ~%MOD_FOLDER%/lib/common.tpa~
+
+// in theory, can do how-specific content, but no need yet
+//ACTION_IF game_includes_how BEGIN
+//
+//  OUTER_SET exp_check = 1
+//  OUTER_SET conflict_check = 0
+//  INCLUDE ~%MOD_FOLDER%/lib/common.tpa~
+//
+//END
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Crossmod Romance Conflicts                       \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @3000 DESIGNATED 30 /* Crossmod Romance Conflicts */
+//REQUIRE_PREDICATE GAME_IS ~iwd how totlm iwdee~ @100 // only iwdee for now
+REQUIRE_PREDICATE GAME_IS ~iwdee~ @100
+LABEL ~cd_crossmod_banter_pack_iwd_romance_conflicts~
+
+OUTER_SET exp_check = 0
+OUTER_SET conflict_check = 1
+INCLUDE ~%MOD_FOLDER%/lib/common.tpa~
+
+// in theory, can do how-specific content, but no need yet
+//ACTION_IF game_includes_how BEGIN
+//
+//  OUTER_SET exp_check = 1
+//  OUTER_SET conflict_check = 1
+//  INCLUDE ~%MOD_FOLDER%/lib/common.tpa~
+//
+//END

@@ -1,0 +1,46 @@
+OUTER_SET cd_iwdcrossmodpack_always = 1
+
+// set some vars for later
+ACTION_IF GAME_IS ~iwd~   BEGIN OUTER_SET game_is_iwd   = 1 END ELSE BEGIN OUTER_SET game_is_iwd   = 0 END
+ACTION_IF GAME_IS ~how~   BEGIN OUTER_SET game_is_how   = 1 END ELSE BEGIN OUTER_SET game_is_how   = 0 END
+ACTION_IF GAME_IS ~totlm~ BEGIN OUTER_SET game_is_totlm = 1 END ELSE BEGIN OUTER_SET game_is_totlm = 0 END
+ACTION_IF GAME_IS ~iwdee~ BEGIN OUTER_SET game_is_iwdee = 1 END ELSE BEGIN OUTER_SET game_is_iwdee = 0 END
+
+ACTION_IF game_is_iwd BEGIN // base oiwd
+  OUTER_SET game_contains_how = 0 
+END ELSE BEGIN  
+  ACTION_IF game_is_how BEGIN // oiwd + how
+    OUTER_SET game_contains_totlm = 0 
+  END ELSE BEGIN // oiwd + how + totlm OR iwdee
+    OUTER_SET game_contains_totlm = 1 
+  END
+END  
+
+// values needed for actual library
+OUTER_SPRINT basegame ~iwd~
+OUTER_SPRINT exp_game ~how~
+                             
+ACTION_IF game_is_iwdee BEGIN
+
+  OUTER_SET enhanced_edition = 1
+  OUTER_SPRINT ~tra_location~ ~weidu_external/%MOD_FOLDER%/languages~
+
+  ACTION_DEFINE_ARRAY cdnoconvert BEGIN weidu END // both EE mods, so already in utf-8
+  LAF HANDLE_CHARSETS INT_VAR infer_charsets = 1 STR_VAR tra_path = EVAL ~%MOD_FOLDER%/languages~ out_path = EVAL ~weidu_external/%MOD_FOLDER%/languages~ noconvert_array = cdnoconvert END
+  
+  // because of how we're using USING and WITH_TRA, we want toe non-cenverted files to be copied to tra_location
+  ACTION_PHP_EACH cdnoconvert AS foo => file BEGIN
+    COPY ~%MOD_FOLDER%/languages/english/%file%.tra~ ~weidu_external/%MOD_FOLDER%/languages/english~
+    ACTION_IF ("%LANGUAGE%" STRING_COMPARE_CASE "english") BEGIN
+      ACTION_IF FILE_EXISTS ~%MOD_FOLDER%/languages/%LANGUAGE%/%file%.tra~ BEGIN
+        COPY ~%MOD_FOLDER%/languages/%LANGUAGE%/%file%.tra~ ~weidu_external/%MOD_FOLDER%/languages/%LANGUAGE%~
+      END 
+    END  
+  END
+  
+END ELSE BEGIN
+
+  OUTER_SET enhanced_edition = 0
+  OUTER_SPRINT ~tra_location~ ~%MOD_FOLDER%/languages~
+
+END

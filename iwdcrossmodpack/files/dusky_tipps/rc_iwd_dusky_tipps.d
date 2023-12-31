@@ -1,0 +1,27 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//DUSKY-TIPPS ROMANCE [5 MINUTES AFTER TIPPS AND PC KISS, IF DUSKY AND PC HAD SOME ROMANCE TALKS; NO OTHER DUSKY TALK SHOULD HAPPEN IN BETWEEN]
+
+CHAIN IF ~Global("L#DuskyTippsRomanceConflict","GLOBAL",2)~ THEN L#DUSKYJ DUSKY-TIPPS-ROMCON00
+@0
+DO ~IncrementGlobal("L#DuskyTippsRomanceConflict","GLOBAL",1)~
+==L#TIPJ @1
+==L#DUSKYJ @2
+END
+IF~~THEN REPLY @3 EXTERN L#TIPJ DUSKY-TIPPS-ROMCON01
+IF~~THEN REPLY @4 EXTERN L#DUSKYJ DUSKY-TIPPS-ROMCON02
+IF~~THEN REPLY @5 EXTERN L#TIPJ DUSKY-TIPPS-ROMCON03
+
+CHAIN L#TIPJ DUSKY-TIPPS-ROMCON01
+@6
+DO ~SetGlobal("L#TippsRomanceActive","GLOBAL",3)~ EXIT // KILL TIPPS ROMANCE
+
+CHAIN L#DUSKYJ DUSKY-TIPPS-ROMCON02
+@7
+==L#TIPJ @8
+==L#DUSKYJ  @9
+DO ~SetGlobal("DuskyRomanceActive","GLOBAL",3)~ EXIT // KILL DUSKY ROMANCE
+
+CHAIN L#TIPJ DUSKY-TIPPS-ROMCON03
+@10
+==L#DUSKYJ @11
+DO ~SetGlobal("L#TippsRomanceActive","GLOBAL",3) SetGlobal("DuskyRomanceActive","GLOBAL",3)~ EXIT // KILL BOTH ROMANCES

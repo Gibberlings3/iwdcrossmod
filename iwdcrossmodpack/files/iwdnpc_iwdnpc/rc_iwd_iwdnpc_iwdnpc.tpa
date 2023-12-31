@@ -1,0 +1,4 @@
+EXTEND_TOP ~o#holvir.bcs~ ~%MOD_FOLDER%/files/iwdnpc_iwdnpc/holvir.baf~
+EXTEND_TOP ~o#korin.bcs~  ~%MOD_FOLDER%/files/iwdnpc_iwdnpc/korin.baf~
+EXTEND_TOP ~o#nella.bcs~  ~%MOD_FOLDER%/files/iwdnpc_iwdnpc/nella.baf~
+EXTEND_TOP ~o#teri.bcs~   ~%MOD_FOLDER%/files/iwdnpc_iwdnpc/teri.baf~

@@ -1,0 +1,36 @@
+//Dendjelion
+
+CHAIN IF WEIGHT #-1
+~IsGabber("L#DENDJELION")
+See("L#DENDJELION")
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck("L#DENDJELION",CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+Global("L#DENDJELIONOrraBanter1","GLOBAL",0)~ THEN L#ORRAB L#DENDJELION-ORRA-BANTER-1
+@0 
+DO ~IncrementGlobal("L#DENDJELIONOrraBanter1","GLOBAL",1)~
+== L#DENDJB @1
+== L#ORRAB @2
+== L#DENDJB @3
+== L#DENDJB @4
+== L#ORRAB @5
+EXIT
+
+CHAIN IF WEIGHT #-1
+~IsGabber("L#DENDJELION")
+See("L#DENDJELION")
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck("L#DENDJELION",CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+Global("L#DENDJELIONOrraBanter1","GLOBAL",1)~ THEN L#ORRAB L#DENDJELION-ORRA-BANTER-2
+@6 
+DO ~IncrementGlobal("L#DENDJELIONOrraBanter1","GLOBAL",1)~
+== L#DENDJB @7
+== L#ORRAB @8
+== L#ORRAB @9
+== L#DENDJB @10
+== L#ORRAB @11
+== L#DENDJB @12
+EXIT

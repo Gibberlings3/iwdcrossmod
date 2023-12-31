@@ -1,0 +1,96 @@
+CHAIN IF WEIGHT #-1
+~InParty("C0KARIHI")
+IsGabber("L#DENDJELION")
+!StateCheck("L#DENDJELION",CD_STATE_NOTVALID)
+!StateCheck("C0KARIHI",CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+Global("C0KarihiDendjelionBanter1","GLOBAL",0)~ THEN BC0KARIH KARIHI-DENDJELION-1
+@0
+DO ~IncrementGlobal("C0KarihiDendjelionBanter1","GLOBAL",1)~
+== L#DENDJB @1
+== BC0KARIH @2
+== L#DENDJB @3
+== BC0KARIH @4
+== L#DENDJB @5
+EXIT
+
+CHAIN IF WEIGHT #-1
+~InParty("L#DENDJELION")
+IsGabber("C0KARIHI")
+!StateCheck("L#DENDJELION",CD_STATE_NOTVALID)
+!StateCheck("C0KARIHI",CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+Global("C0KarihiDendjelionBanter2","GLOBAL",0)~ THEN L#DENDJB KARIHI-DENDJELION-2
+@6
+DO ~IncrementGlobal("C0KarihiDendjelionBanter2","GLOBAL",1)~
+== BC0KARIH @7
+== L#DENDJB @8
+== BC0KARIH @9
+== L#DENDJB @10
+== BC0KARIH @11
+== L#DENDJB @12
+== BC0KARIH @13
+== L#DENDJB @14
+EXIT
+
+CHAIN IF WEIGHT #-1
+~InParty("L#DENDJELION")
+IsGabber("C0KARIHI")
+!StateCheck("L#DENDJELION",CD_STATE_NOTVALID)
+!StateCheck("C0KARIHI",CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+GlobalGT("C0KarihiEncounter","GLOBAL",0)
+Alignment("C0KARIHI",MASK_GOOD)
+Global("C0KarihiDendjelionBanter3","GLOBAL",0)~ THEN L#DENDJB KARIHI-DENDJELION-3-GOOD
+@15
+DO ~IncrementGlobal("C0KarihiDendjelionBanter3","GLOBAL",1)~
+== BC0KARIH @16
+== L#DENDJB @17
+== BC0KARIH @18
+== L#DENDJB @19
+== BC0KARIH @20
+EXIT
+
+CHAIN IF WEIGHT #-1
+~InParty("L#DENDJELION")
+IsGabber("C0KARIHI")
+!StateCheck("L#DENDJELION",CD_STATE_NOTVALID)
+!StateCheck("C0KARIHI",CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+GlobalGT("C0KarihiEncounter","GLOBAL",0)
+Dead("C0KSERV")
+!Alignment("C0KARIHI",MASK_GOOD)
+Global("C0KarihiDendjelionBanter3","GLOBAL",0)~ THEN L#DENDJB KARIHI-DENDJELION-3-NEUTRAL
+@21
+DO ~IncrementGlobal("C0KarihiDendjelionBanter3","GLOBAL",1)~
+== BC0KARIH @22
+== L#DENDJB @23
+== BC0KARIH @24
+== L#DENDJB @25
+== BC0KARIH @26
+== L#DENDJB @27
+== BC0KARIH @28
+== L#DENDJB @29
+== BC0KARIH @30
+EXIT
+
+CHAIN IF WEIGHT #-1
+~InParty("L#DENDJELION")
+IsGabber("C0KARIHI")
+!StateCheck("L#DENDJELION",CD_STATE_NOTVALID)
+!StateCheck("C0KARIHI",CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+Global("C0HolvirDendjelionConflict","GLOBAL",3)
+Global("C0KarihiDendjelionBanter4","GLOBAL",0)~ THEN L#DENDJB KARIHI-DENDJELION-3
+@31
+DO ~IncrementGlobal("C0KarihiDendjelionBanter4","GLOBAL",1)~
+== BC0KARIH @32
+== L#DENDJB @33
+== BC0KARIH @34
+== L#DENDJB @35
+EXIT

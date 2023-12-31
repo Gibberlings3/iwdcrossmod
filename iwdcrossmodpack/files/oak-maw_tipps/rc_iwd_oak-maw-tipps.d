@@ -1,0 +1,19 @@
+///////////////////////////////////////////////////////////////////////////////////////
+//TIPPS-OAK MAW ROMANCE [RIGHT AFTER PC GOT INTERESTED IN OAK MAW; TIPPS SERIOUS RELATIONSHIP, NOT JUST FUN]
+
+CHAIN IF ~Global("L#TippsOakmawRomanceConflict","GLOBAL",2)~ THEN L#TIPJ TIPPS-OAKM-ROMCON00
+@0
+DO ~IncrementGlobal("L#TippsOakmawRomanceConflict","GLOBAL",1)~
+==L#OMJ @1
+==L#TIPJ @2
+END
+IF~~THEN REPLY @3 EXTERN L#TIPJ TIPPS-OAKM-ROMCON01
+IF~~THEN REPLY @4 EXTERN L#OMJ TIPPS-OAKM-ROMCON02
+
+CHAIN L#TIPJ TIPPS-OAKM-ROMCON01
+@5
+DO ~SetGlobal("L#TippsRomanceActive","GLOBAL",3)~ EXIT // KILL TIPPS ROMANCE
+
+CHAIN L#OMJ TIPPS-OAKM-ROMCON02
+@6
+DO ~SetGlobal("L#OMRomanceActive","GLOBAL",3)~ EXIT // KILLS OAK-MAW ROMANCE
