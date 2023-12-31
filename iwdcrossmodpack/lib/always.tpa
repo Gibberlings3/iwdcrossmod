@@ -1,5 +1,17 @@
 OUTER_SET cd_iwdcrossmodpack_always = 1
 
+// since only iwdee is supported atm, skip all of these checks (but save code for future)
+OUTER_SET game_is_iwdee = 1
+OUTER_SET game_contains_how = 1 
+OUTER_SET game_contains_totlm = 1 
+
+OUTER_SPRINT basegame ~iwd~
+OUTER_SPRINT exp_game ~how~
+
+OUTER_SET enhanced_edition = 1
+OUTER_SPRINT ~tra_location~ ~%MOD_FOLDER%/languages~
+
+/*
 // set some vars for later
 ACTION_IF GAME_IS ~iwd~   BEGIN OUTER_SET game_is_iwd   = 1 END ELSE BEGIN OUTER_SET game_is_iwd   = 0 END
 ACTION_IF GAME_IS ~how~   BEGIN OUTER_SET game_is_how   = 1 END ELSE BEGIN OUTER_SET game_is_how   = 0 END
@@ -9,6 +21,7 @@ ACTION_IF GAME_IS ~iwdee~ BEGIN OUTER_SET game_is_iwdee = 1 END ELSE BEGIN OUTER
 ACTION_IF game_is_iwd BEGIN // base oiwd
   OUTER_SET game_contains_how = 0 
 END ELSE BEGIN  
+  OUTER_SET game_contains_how = 1 
   ACTION_IF game_is_how BEGIN // oiwd + how
     OUTER_SET game_contains_totlm = 0 
   END ELSE BEGIN // oiwd + how + totlm OR iwdee
@@ -23,10 +36,18 @@ OUTER_SPRINT exp_game ~how~
 ACTION_IF game_is_iwdee BEGIN
 
   OUTER_SET enhanced_edition = 1
+  OUTER_SPRINT ~tra_location~ ~%MOD_FOLDER%/languages~
+  
+END ELSE BEGIN
+
+  OUTER_SET enhanced_edition = 0
   OUTER_SPRINT ~tra_location~ ~weidu_external/%MOD_FOLDER%/languages~
 
-  ACTION_DEFINE_ARRAY cdnoconvert BEGIN weidu END // both EE mods, so already in utf-8
-  LAF HANDLE_CHARSETS INT_VAR infer_charsets = 1 STR_VAR tra_path = EVAL ~%MOD_FOLDER%/languages~ out_path = EVAL ~weidu_external/%MOD_FOLDER%/languages~ noconvert_array = cdnoconvert END
+  // convert strings from UTF-8 for originals  
+  ACTION_DEFINE_ARRAY cdnoconvert BEGIN weidu END
+  LAF HANDLE_CHARSETS INT_VAR from_utf8 = 1 infer_charsets = 1 
+                      STR_VAR default_language = ~english~ tra_path = ~%MOD_FOLDER%/languages~ 
+                        out_path = ~weidu_external/%MOD_FOLDER%/languages~ noconvert_array = cdnoconvert reload_array = cdreload END
   
   // because of how we're using USING and WITH_TRA, we want toe non-cenverted files to be copied to tra_location
   ACTION_PHP_EACH cdnoconvert AS foo => file BEGIN
@@ -37,10 +58,6 @@ ACTION_IF game_is_iwdee BEGIN
       END 
     END  
   END
-  
-END ELSE BEGIN
-
-  OUTER_SET enhanced_edition = 0
-  OUTER_SPRINT ~tra_location~ ~%MOD_FOLDER%/languages~
 
 END
+*/
