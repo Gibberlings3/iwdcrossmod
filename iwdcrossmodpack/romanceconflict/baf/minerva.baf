@@ -1,0 +1,145 @@
+// DENDJELION
+
+IF
+	InParty(Myself)
+	InParty("L#DENDJELION")
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	GlobalGT("L#DendjAfter1stSex","GLOBAL",0)
+	OR(2)
+	Global("C0MMinRomanceActive","GLOBAL",1)
+	Global("C0MMinRomanceActive","GLOBAL",2)
+	Global("C0DendjelionMinervaConflict","GLOBAL",0)
+THEN
+  RESPONSE #100
+	SetInterrupt(FALSE)
+	SetGlobal("C0DendjelionMinervaConflict","GLOBAL",1)
+	RealSetGlobalTimer("C0IWD_ROM_CONFLICT_TIMER","LOCALS",5)
+	SetInterrupt(TRUE)
+END
+
+IF
+	InParty(Myself)
+	InParty("L#DENDJELION")
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	RealGlobalTimerExpired("C0IWD_ROM_CONFLICT_TIMER","LOCALS")
+	OR(2)
+	Global("C0MMinRomanceActive","GLOBAL",1)
+	Global("C0MMinRomanceActive","GLOBAL",2)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("C0DendjelionMinervaConflict","GLOBAL",1)
+THEN
+RESPONSE #100
+	SetGlobal("C0DendjelionMinervaConflict","GLOBAL",2)
+	StartDialogueNoSet(Player1)
+END
+
+// HOLVIR
+
+IF
+	InParty(Myself)
+	InParty("O#HOLVIR")
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	Global("O#HolvirMatch","GLOBAL",1)
+	Global("O#PCHolvir7","GLOBAL",2)
+	Global("C0MMinRomanceActive","GLOBAL",1)
+	Global("C0MinervaHolvirConflict","GLOBAL",0)
+THEN
+  RESPONSE #100
+	SetInterrupt(FALSE)
+	SetGlobal("C0MinervaHolvirConflict","GLOBAL",1)
+	RealSetGlobalTimer("C0IWD_ROM_CONFLICT_TIMER","LOCALS",5)
+	SetInterrupt(TRUE)
+END
+
+IF
+	InParty(Myself)
+	InParty("O#HOLVIR")
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	RealGlobalTimerExpired("C0IWD_ROM_CONFLICT_TIMER","LOCALS")
+	Global("O#HolvirMatch","GLOBAL",1)
+	Global("C0MMinRomanceActive","GLOBAL",1)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("C0MinervaHolvirConflict","GLOBAL",1)
+THEN
+RESPONSE #100
+	SetGlobal("C0MinervaHolvirConflict","GLOBAL",2)
+	StartDialogueNoSet(Player1)
+END
+
+// Oak-Maw
+
+IF
+	InParty(Myself)
+	InParty("L#OM")
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	Global("C0MMinRomanceActive","GLOBAL",1)
+	Global("L#OakmawRomanceActive","GLOBAL",1)
+	GlobalGT("L#OMRomanceTalk","GLOBAL",12)
+	Global("C0MinervaOakmawRomanceConflict","GLOBAL",0)
+THEN
+  RESPONSE #100
+	SetInterrupt(FALSE)
+	SetGlobal("C0MinervaOakmawRomanceConflict","GLOBAL",1)
+	RealSetGlobalTimer("C0IWD_ROM_CONFLICT_TIMER","LOCALS",60)
+	SetInterrupt(TRUE)
+END
+
+IF
+	InParty(Myself)
+	InParty("L#OM")
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	RealGlobalTimerExpired("C0IWD_ROM_CONFLICT_TIMER","LOCALS")
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("C0MMinRomanceActive","GLOBAL",1)
+	Global("L#OakmawRomanceActive","GLOBAL",1)
+	Global("C0MinervaOakmawRomanceConflict","GLOBAL",1)
+THEN
+RESPONSE #100
+	SetGlobal("C0MinervaOakmawRomanceConflict","GLOBAL",2)
+	StartDialogueNoSet(Player1)
+END
+
+// Tipps
+
+IF
+	InParty(Myself)
+	InParty("L#TIP")
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	Global("C0MMinRomanceActive","GLOBAL",1)
+	Global("L#TippsRomanceActive","GLOBAL",1)
+	GlobalGT("L#TippsRomanceTalk","GLOBAL",11)
+	Global("C0MinervaTippsRomanceConflict","GLOBAL",0)
+THEN
+  RESPONSE #100
+	SetInterrupt(FALSE)
+	SetGlobal("C0MinervaTippsRomanceConflict","GLOBAL",1)
+	RealSetGlobalTimer("C0IWD_ROM_CONFLICT_TIMER","LOCALS",2)
+	SetInterrupt(TRUE)
+END
+
+IF
+	InParty(Myself)
+	InParty("L#TIP")
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	RealGlobalTimerExpired("C0IWD_ROM_CONFLICT_TIMER","LOCALS")
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("C0MMinRomanceActive","GLOBAL",1)
+	Global("L#TippsRomanceActive","GLOBAL",1)
+	Global("C0MinervaTippsRomanceConflict","GLOBAL",1)
+THEN
+RESPONSE #100
+	SetGlobal("C0MinervaTippsRomanceConflict","GLOBAL",2)
+	StartDialogueNoSet(Player1)
+END

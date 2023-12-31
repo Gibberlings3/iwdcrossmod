@@ -1,0 +1,20 @@
+// EVENING SHADE - COOKING DIALOGUE
+
+IF
+    InParty(Myself)
+	NumInPartyGT(2)
+    !StateCheck(Myself,CD_STATE_NOTVALID)
+	Global("C0MMinCooking","GLOBAL",0)
+	AreaCheck("AR2114")
+	TimeOfDay(NIGHT)
+THEN
+  RESPONSE #100
+	StartCutSceneMode()
+	CutSceneId("C0MMin")
+	FadeToColor([20.0],0)
+	Wait(2)
+	FadeFromColor([20.0],0)
+	Wait(2)
+    SetGlobal("C0MMinCooking","GLOBAL",1)
+	StartDialogueNoSet(Player1)
+END

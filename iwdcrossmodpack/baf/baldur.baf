@@ -1,0 +1,174 @@
+IF	
+	Global("IWD_BANTER_TIMER","GLOBAL",0)
+	Global("IWD_BANTER_TIMER_START","GLOBAL",0)
+THEN
+  RESPONSE #100
+	SetGlobal("IWD_BANTER_TIMER_START","GLOBAL",1)
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+END
+
+IF	
+	TriggerOverride(Player2,ActionListEmpty())
+	!StateCheck(Player2,CD_STATE_NOTVALID)
+	RandomNum(5,1)
+	CombatCounter(0)
+	RealGlobalTimerExpired("IWD_BANTER_TIMER","GLOBAL")
+    GlobalTimerExpired("IWD_BANTER_TIMER_REAL_TIME","GLOBAL")
+THEN
+  RESPONSE #%bantprob1%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+	ActionOverride(Player2,Interact(Player3))
+	ActionOverride(Player3,Interact(Player2))
+  RESPONSE #%bantprob1%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+	ActionOverride(Player2,Interact(Player4))
+	ActionOverride(Player4,Interact(Player2))
+  RESPONSE #%bantprob1%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+	ActionOverride(Player2,Interact(Player5))
+	ActionOverride(Player5,Interact(Player2))
+  RESPONSE #%bantprob1%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+	ActionOverride(Player2,Interact(Player6))
+	ActionOverride(Player6,Interact(Player2))
+  RESPONSE #%bantprob2%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+END
+
+IF	
+	TriggerOverride(Player3,ActionListEmpty())
+	!StateCheck(Player3,CD_STATE_NOTVALID)
+	RandomNum(5,2)
+	CombatCounter(0)
+	RealGlobalTimerExpired("IWD_BANTER_TIMER","GLOBAL")
+    GlobalTimerExpired("IWD_BANTER_TIMER_REAL_TIME","GLOBAL")
+THEN
+  RESPONSE #%bantprob1%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+	ActionOverride(Player3,Interact(Player2))
+	ActionOverride(Player2,Interact(Player3))
+  RESPONSE #%bantprob1%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+	ActionOverride(Player3,Interact(Player4))
+	ActionOverride(Player4,Interact(Player3))
+  RESPONSE #%bantprob1%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+	ActionOverride(Player3,Interact(Player5))
+	ActionOverride(Player5,Interact(Player3))
+  RESPONSE #%bantprob1%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+	ActionOverride(Player3,Interact(Player6))
+	ActionOverride(Player6,Interact(Player3))
+  RESPONSE #%bantprob2%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+END
+
+IF	
+	TriggerOverride(Player4,ActionListEmpty())
+	!StateCheck(Player4,CD_STATE_NOTVALID)
+	RandomNum(5,3)
+	CombatCounter(0)
+	RealGlobalTimerExpired("IWD_BANTER_TIMER","GLOBAL")
+    GlobalTimerExpired("IWD_BANTER_TIMER_REAL_TIME","GLOBAL")
+THEN
+  RESPONSE #%bantprob1%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+	ActionOverride(Player4,Interact(Player2))
+	ActionOverride(Player2,Interact(Player4))
+  RESPONSE #%bantprob1%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+	ActionOverride(Player4,Interact(Player3))
+	ActionOverride(Player3,Interact(Player4))
+  RESPONSE #%bantprob1%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+	ActionOverride(Player4,Interact(Player5))
+	ActionOverride(Player5,Interact(Player4))
+  RESPONSE #%bantprob1%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+	ActionOverride(Player4,Interact(Player6))
+	ActionOverride(Player6,Interact(Player4))
+  RESPONSE #%bantprob2%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+END
+
+IF	
+	TriggerOverride(Player5,ActionListEmpty())
+	!StateCheck(Player5,CD_STATE_NOTVALID)
+	RandomNum(5,4)
+	CombatCounter(0)
+	RealGlobalTimerExpired("IWD_BANTER_TIMER","GLOBAL")
+    GlobalTimerExpired("IWD_BANTER_TIMER_REAL_TIME","GLOBAL")
+THEN
+  RESPONSE #%bantprob1%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+	ActionOverride(Player5,Interact(Player2))
+	ActionOverride(Player2,Interact(Player5))
+  RESPONSE #%bantprob1%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+	ActionOverride(Player5,Interact(Player3))
+	ActionOverride(Player3,Interact(Player5))
+  RESPONSE #%bantprob1%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+	ActionOverride(Player5,Interact(Player4))
+	ActionOverride(Player4,Interact(Player5))
+  RESPONSE #%bantprob1%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+	ActionOverride(Player5,Interact(Player6))
+	ActionOverride(Player6,Interact(Player5))
+  RESPONSE #%bantprob2%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+END
+
+IF	
+	TriggerOverride(Player6,ActionListEmpty())
+	!StateCheck(Player6,CD_STATE_NOTVALID)
+	RandomNum(5,5)
+	CombatCounter(0)
+	RealGlobalTimerExpired("IWD_BANTER_TIMER","GLOBAL")
+    GlobalTimerExpired("IWD_BANTER_TIMER_REAL_TIME","GLOBAL")
+THEN
+  RESPONSE #%bantprob1%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+	ActionOverride(Player6,Interact(Player2))
+	ActionOverride(Player2,Interact(Player6))
+  RESPONSE #%bantprob1%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+	ActionOverride(Player6,Interact(Player3))
+	ActionOverride(Player3,Interact(Player6))
+  RESPONSE #%bantprob1%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+	ActionOverride(Player6,Interact(Player4))
+	ActionOverride(Player4,Interact(Player6))
+  RESPONSE #%bantprob1%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+	ActionOverride(Player6,Interact(Player5))
+	ActionOverride(Player5,Interact(Player6))
+  RESPONSE #%bantprob2%
+    RealSetGlobalTimer("IWD_BANTER_TIMER","GLOBAL",%banttime%)
+    SetGlobalTimer("IWD_BANTER_TIMER_REAL_TIME","GLOBAL",7200)
+END

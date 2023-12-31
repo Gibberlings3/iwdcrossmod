@@ -1,0 +1,29 @@
+// Crossmod - Urchin, touching painting
+
+IF
+	InParty(Myself)
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	Global("L#UrchinSign","AR2006",1)
+	!Global("L#NightGladeSpawns","GLOBAL",1)
+	Global("C0KarihiUrchinSignComment","GLOBAL",0)
+THEN
+  RESPONSE #100
+	SetInterrupt(FALSE)
+	SetGlobal("C0KarihiUrchinSignComment","GLOBAL",1)
+	StartDialogueNoSet(Player1)
+	SetInterrupt(TRUE)
+END
+
+// Crossmod - Karihi/Urchin Rest Banter
+
+IF
+	InParty(Myself)
+	InParty("L#URCHIN")
+	Global("C0KarihiUrchinRestTalkStart","GLOBAL",0)
+	Global("C0KarihiUrchinRestTalkTimer","GLOBAL",0)
+THEN
+RESPONSE #100
+	SetGlobal("C0KarihiUrchinRestTalkStart","GLOBAL",1)
+	SetGlobalTimer("C0KarihiUrchinRestTalkTimer","GLOBAL",FIVE_DAYS)
+END

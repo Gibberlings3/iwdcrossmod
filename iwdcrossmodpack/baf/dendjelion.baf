@@ -1,0 +1,50 @@
+IF
+	InParty(Myself)
+	InParty("O#HOLVIR")
+	Global("C0HolvirDendjelionConflictStart","GLOBAL",0)
+THEN
+  RESPONSE #100
+	SetInterrupt(FALSE)
+	SetGlobal("C0HolvirDendjelionConflictStart","GLOBAL",1)
+	SetGlobalTimer("C0HolvirDendjelionConflictTimer","GLOBAL",THREE_DAYS)
+	SetInterrupt(TRUE)
+END
+
+IF
+	InParty(Myself)
+	InParty("O#HOLVIR")
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck("O#HOLVIR",CD_STATE_NOTVALID)
+	Global("C0HolvirDendjelionConflictStart","GLOBAL",1)
+	GlobalTimerExpired("C0HolvirDendjelionConflictTimer","GLOBAL")
+THEN
+  RESPONSE #100
+	SetInterrupt(FALSE)
+	SetGlobal("C0HolvirDendjelionConflictStart","GLOBAL",2)
+	Interact(Player1)
+	SetInterrupt(TRUE)
+END
+
+IF
+	!Dead("O#HOLVIR")
+	Global("C0HolvirDendjelionFight","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetInterrupt(FALSE)
+	LeaveParty()
+	Attack("O#HOLVIR")
+	SetInterrupt(TRUE)
+END
+
+IF
+	InMyArea(Player1)
+	Dead("O#HOLVIR")
+	Global("C0HolvirDendjelionFight","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetInterrupt(FALSE)
+	SetGlobal("C0HolvirDendjelionFight","GLOBAL",2)
+	StartDialogueNoSet(Player1)
+	SetInterrupt(TRUE)
+END

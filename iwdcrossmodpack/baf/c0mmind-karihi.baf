@@ -1,0 +1,22 @@
+// CROSSMOD - MINERVA REST BANTER
+
+IF
+    InParty(Myself)
+	InParty("C0KARIHI")
+    !StateCheck(Myself,CD_STATE_NOTVALID)
+    !StateCheck("C0KARIHI",CD_STATE_NOTVALID)
+	Global("C0KarihiMinervaRestBanter","GLOBAL",0)
+	GlobalTimerExpired("C0KarihiMinervaRestBanterTimer","GLOBAL")
+	TimeOfDay(NIGHT)
+	AreaType(OUTDOOR)
+THEN
+  RESPONSE #100
+	StartCutSceneMode()
+	CutSceneId("C0MMin")
+	FadeToColor([20.0],0)
+	Wait(2)
+	FadeFromColor([20.0],0)
+	Wait(2)
+    SetGlobal("C0KarihiMinervaRestBanter","GLOBAL",1)
+	Interact("C0KARIHI")
+END

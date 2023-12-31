@@ -1,0 +1,212 @@
+// DENDJELION
+
+IF
+	InParty(Myself)
+	InParty("L#DENDJELION")
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	GlobalGT("L#DendjAfter1stSex","GLOBAL",0)
+	OR(2)
+	Global("O#NellaMatch","GLOBAL",1)
+	Global("O#NellaMatch","GLOBAL",2)
+	Global("C0DendjelionNellaConflict","GLOBAL",0)
+THEN
+  RESPONSE #100
+	SetInterrupt(FALSE)
+	SetGlobal("C0DendjelionNellaConflict","GLOBAL",1)
+	RealSetGlobalTimer("C0IWD_ROM_CONFLICT_TIMER","LOCALS",5)
+	SetInterrupt(TRUE)
+END
+
+IF
+	InParty(Myself)
+	InParty("L#DENDJELION")
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	RealGlobalTimerExpired("C0IWD_ROM_CONFLICT_TIMER","LOCALS")
+	OR(2)
+	Global("O#NellaMatch","GLOBAL",1)
+	Global("O#NellaMatch","GLOBAL",2)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("C0DendjelionNellaConflict","GLOBAL",1)
+THEN
+RESPONSE #100
+	SetGlobal("C0DendjelionNellaConflict","GLOBAL",2)
+	StartDialogueNoSet(Player1)
+END
+
+// DUSKY
+
+IF
+	InParty(Myself)
+	InParty("L#DUSKY")
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	Global("DuskyRomanceActive","GLOBAL",1)
+	Global("O#NellaMatch","GLOBAL",1)
+	Global("C0DuskyNellaConflict","GLOBAL",0)
+THEN
+  RESPONSE #100
+	SetInterrupt(FALSE)
+	SetGlobal("C0DuskyNellaConflict","GLOBAL",1)
+	RealSetGlobalTimer("C0IWD_ROM_CONFLICT_TIMER","LOCALS",5)
+	SetInterrupt(TRUE)
+END
+
+IF
+	InParty(Myself)
+	InParty("L#DUSKY")
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	RealGlobalTimerExpired("C0IWD_ROM_CONFLICT_TIMER","LOCALS")
+	Global("DuskyRomanceActive","GLOBAL",1)
+	Global("O#NellaMatch","GLOBAL",1)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("C0DuskyNellaConflict","GLOBAL",1)
+THEN
+RESPONSE #100
+	SetGlobal("C0DuskyNellaConflict","GLOBAL",2)
+	StartDialogueNoSet(Player1)
+END
+
+// KARIHI
+
+IF
+	InParty(Myself)
+	InParty("C0KARIHI")
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	Global("C0KarihiRomanceActive","GLOBAL",1)
+	Global("O#NellaMatch","GLOBAL",1)
+	Global("C0KarihiNellaConflict","GLOBAL",0)
+THEN
+  RESPONSE #100
+	SetInterrupt(FALSE)
+	SetGlobal("C0KarihiNellaConflict","GLOBAL",1)
+	RealSetGlobalTimer("C0IWD_ROM_CONFLICT_TIMER","LOCALS",5)
+	SetInterrupt(TRUE)
+END
+
+IF
+	InParty(Myself)
+	InParty("C0KARIHI")
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	RealGlobalTimerExpired("C0IWD_ROM_CONFLICT_TIMER","LOCALS")
+	Global("C0KarihiRomanceActive","GLOBAL",1)
+	Global("O#NellaMatch","GLOBAL",1)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("C0KarihiNellaConflict","GLOBAL",1)
+THEN
+RESPONSE #100
+	SetGlobal("C0KarihiNellaConflict","GLOBAL",2)
+	StartDialogueNoSet(Player1)
+END
+
+// MINERVA
+
+IF
+	InParty(Myself)
+	InParty("C0MMIN")
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	Global("C0MMinRomanceActive","GLOBAL",1)
+	Global("O#NellaMatch","GLOBAL",1)
+	Global("C0MinervaNellaConflict","GLOBAL",0)
+THEN
+  RESPONSE #100
+	SetInterrupt(FALSE)
+	SetGlobal("C0MinervaNellaConflict","GLOBAL",1)
+	RealSetGlobalTimer("C0IWD_ROM_CONFLICT_TIMER","LOCALS",5)
+	SetInterrupt(TRUE)
+END
+
+IF
+	InParty(Myself)
+	InParty("C0MMIN")
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	RealGlobalTimerExpired("C0IWD_ROM_CONFLICT_TIMER","LOCALS")
+	Global("C0MMinRomanceActive","GLOBAL",1)
+	Global("O#NellaMatch","GLOBAL",1)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("C0MinervaNellaConflict","GLOBAL",1)
+THEN
+RESPONSE #100
+	SetGlobal("C0MinervaNellaConflict","GLOBAL",2)
+	StartDialogueNoSet(Player1)
+END
+
+// Oak-Maw
+
+IF
+	InParty(Myself)
+	InParty("L#OM")
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	Global("O#NellaMatch","GLOBAL",1)
+	Global("L#OakmawRomanceActive","GLOBAL",1)
+	Global("O#NellaOakmawRomanceConflict","GLOBAL",0)
+THEN
+  RESPONSE #100
+	SetInterrupt(FALSE)
+	SetGlobal("O#NellaOakmawRomanceConflict","GLOBAL",1)
+	RealSetGlobalTimer("C0IWD_ROM_CONFLICT_TIMER","LOCALS",60)
+	SetInterrupt(TRUE)
+END
+
+IF
+	InParty(Myself)
+	InParty("L#OM")
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	RealGlobalTimerExpired("C0IWD_ROM_CONFLICT_TIMER","LOCALS")
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("O#NellaMatch","GLOBAL",1)
+	Global("L#OakmawRomanceActive","GLOBAL",1)
+	Global("O#NellaOakmawRomanceConflict","GLOBAL",1)
+THEN
+RESPONSE #100
+	SetGlobal("O#NellaOakmawRomanceConflict","GLOBAL",2)
+	StartDialogueNoSet(Player1)
+END
+
+// Tipps
+
+IF
+	InParty(Myself)
+	InParty("L#TIP")
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	Global("O#NellaMatch","GLOBAL",1)
+	Global("L#TippsRomanceActive","GLOBAL",1)
+	Global("O#NellaTippsRomanceConflict","GLOBAL",0)
+THEN
+  RESPONSE #100
+	SetInterrupt(FALSE)
+	SetGlobal("O#NellaTippsRomanceConflict","GLOBAL",1)
+	RealSetGlobalTimer("C0IWD_ROM_CONFLICT_TIMER","LOCALS",60)
+	SetInterrupt(TRUE)
+END
+
+IF
+	InParty(Myself)
+	InParty("L#TIP")
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	RealGlobalTimerExpired("C0IWD_ROM_CONFLICT_TIMER","LOCALS")
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("O#NellaMatch","GLOBAL",1)
+	Global("L#TippsRomanceActive","GLOBAL",1)
+	Global("O#NellaTippsRomanceConflict","GLOBAL",1)
+THEN
+RESPONSE #100
+	SetGlobal("O#NellaTippsRomanceConflict","GLOBAL",2)
+	StartDialogueNoSet(Player1)
+END

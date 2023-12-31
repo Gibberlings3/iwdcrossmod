@@ -1,0 +1,50 @@
+// Crossmod - Minerva/Karihi Rest Banter
+
+IF
+	InParty(Myself)
+	InParty("C0KARIHI")
+	Global("C0KarihiMinervaRestBanterStart","GLOBAL",0)
+	Global("C0KarihiMinervaRestBanterTimer","GLOBAL",0)
+THEN
+RESPONSE #100
+	SetGlobal("C0KarihiMinervaRestBanterStart","GLOBAL",1)
+	SetGlobalTimer("C0KarihiMinervaRestBanterTimer","GLOBAL",FIVE_DAYS)
+END
+
+// AR1102
+
+IF
+	InParty(Myself)
+	InParty("C0KARIHI")
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck("C0KARIHI",CD_STATE_NOTVALID)
+	OR(2)
+	Global("C0MMinTalkTimer","LOCALS",0)
+	RealGlobalTimerExpired("C0MMinTalkTimer","LOCALS")
+	!See([ENEMY])
+	CombatCounter(0)
+	AreaCheck("AR1102")
+	Global("C0MinervaKarihiEndTalk","GLOBAL",0)
+THEN
+RESPONSE #100
+	SetGlobal("C0MinervaKarihiEndTalk","GLOBAL",1)
+	RealSetGlobalTimer("C0MMinTalkTimer","LOCALS",2)
+END
+
+// Talk Trigger
+
+IF
+	InParty(Myself)
+	InParty("C0KARIHI")
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck("C0KARIHI",CD_STATE_NOTVALID)
+	OR(2)
+	Global("C0MMinTalkTimer","LOCALS",0)
+	RealGlobalTimerExpired("C0MMinTalkTimer","LOCALS")
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("C0MinervaKarihiEndTalk","GLOBAL",1)
+THEN
+RESPONSE #100
+	Interact("C0Karihi")
+END

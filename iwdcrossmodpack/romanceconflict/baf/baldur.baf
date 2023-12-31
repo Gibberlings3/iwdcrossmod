@@ -1,0 +1,297 @@
+// ROMANCE KILLERS
+
+// DUSKY
+
+IF
+	InParty("L#DUSKY")
+	InParty("O#NELLA")
+	Global("DuskyRomanceActive","GLOBAL",2)
+	Global("O#NellaMatch","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("O#NellaMatch","GLOBAL",0)
+END
+
+IF
+	InParty("L#DUSKY")
+	InParty("O#TERI")
+	Global("DuskyRomanceActive","GLOBAL",2)
+	Global("O#TeriMatch","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("O#TeriMatch","GLOBAL",0)
+END
+
+IF
+	InParty("L#DUSKY")
+	InParty("C0KARIHI")
+	Global("DuskyRomanceActive","GLOBAL",2)
+	Global("C0KarihiRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("C0KarihiRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty("L#DUSKY")
+	InParty("C0MMIN")
+	Global("DuskyRomanceActive","GLOBAL",2)
+	Global("C0MMinRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("C0MMinRomanceActive","GLOBAL",3)
+END
+
+// INA
+
+IF
+	InParty("L#INA")
+	InParty("O#HOLVIR")
+	Global("L#InaRomanceActive","GLOBAL",2)
+	Global("O#HolvirMatch","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("O#HolvirMatch","GLOBAL",0)
+END
+
+IF
+	InParty("L#INA")
+	InParty("O#KORIN")
+	Global("L#InaRomanceActive","GLOBAL",2)
+	Global("O#KorinMatch","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("O#KorinMatch","GLOBAL",0)
+END
+
+IF
+	InParty("L#INA")
+	InParty("C0MMIN")
+	Global("L#InaRomanceActive","GLOBAL",2)
+	Global("C0MMinRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("C0MMinRomanceActive","GLOBAL",3)
+END
+
+// HOLVIR
+
+IF
+	InParty("C0MMIN")
+	InParty("O#HOLVIR")
+	Global("O#HolvirMatch","GLOBAL",2)
+	Global("C0MMinRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("C0MMinRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty("C0MMIN")
+	InParty("L#INA")
+	Global("O#HolvirMatch","GLOBAL",2)
+	Global("L#InaRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("L#InaRomanceActive","GLOBAL",3)
+END
+
+// KORIN
+
+IF
+	InParty("O#KORIN")
+	InParty("C0MMIN")
+	Global("O#KorinMatch","GLOBAL",2)
+	Global("C0MMinRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("C0MMinRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty("O#KORIN")
+	InParty("L#INA")
+	Global("O#KorinMatch","GLOBAL",2)
+	Global("L#InaRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("L#InaRomanceActive","GLOBAL",3)
+END
+
+// NELLA
+
+IF
+	InParty("O#NELLA")
+	InParty("C0MMIN")
+	Global("O#NellaMatch","GLOBAL",2)
+	Global("C0MMinRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("C0MMinRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty("O#NELLA")
+	InParty("L#DUSKY")
+	Global("O#NellaMatch","GLOBAL",2)
+	Global("DuskyRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("DuskyRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty("O#NELLA")
+	InParty("C0KARIHI")
+	Global("O#NellaMatch","GLOBAL",2)
+	Global("C0KarihiRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("C0KarihiRomanceActive","GLOBAL",3)
+END
+
+// TERI
+
+IF
+	InParty("O#TERI")
+	InParty("C0MMIN")
+	Global("O#TeriMatch","GLOBAL",2)
+	Global("C0MMinRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("C0MMinRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty("O#TERI")
+	InParty("L#DUSKY")
+	Global("O#TeriMatch","GLOBAL",2)
+	Global("DuskyRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("DuskyRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty("O#TERI")
+	InParty("C0KARIHI")
+	Global("O#TeriMatch","GLOBAL",2)
+	Global("C0KarihiRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("C0KarihiRomanceActive","GLOBAL",3)
+END
+
+// KARIHI
+
+IF
+	InParty("O#NELLA")
+	InParty("C0KARIHI")
+	Global("C0KarihiRomanceActive","GLOBAL",2)
+	Global("O#NellaMatch","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("O#NellaMatch","GLOBAL",0)
+END
+
+IF
+	InParty("O#TERI")
+	InParty("C0KARIHI")
+	Global("C0KarihiRomanceActive","GLOBAL",2)
+	Global("O#TeriMatch","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("O#TeriMatch","GLOBAL",0)
+END
+
+IF
+	InParty("L#DUSKY")
+	InParty("C0KARIHI")
+	Global("C0KarihiRomanceActive","GLOBAL",2)
+	Global("DuskyRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("DuskyRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty("C0KARIHI")
+	InParty("C0MMIN")
+	Global("C0KarihiRomanceActive","GLOBAL",2)
+	Global("C0MMinRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("C0MMinRomanceActive","GLOBAL",3)
+END
+
+// MINERVA
+
+IF
+	InParty("O#HOLVIR")
+	InParty("C0MMIN")
+	Global("C0MMinRomanceActive","GLOBAL",2)
+	Global("O#HolvirMatch","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("O#HolvirMatch","GLOBAL",0)
+END
+
+IF
+	InParty("O#KORIN")
+	InParty("C0MMIN")
+	Global("C0MMinRomanceActive","GLOBAL",2)
+	Global("O#KorinMatch","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("O#KorinMatch","GLOBAL",0)
+END
+
+IF
+	InParty("O#NELLA")
+	InParty("C0MMIN")
+	Global("C0MMinRomanceActive","GLOBAL",2)
+	Global("O#NellaMatch","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("O#NellaMatch","GLOBAL",0)
+END
+
+IF
+	InParty("O#TERI")
+	InParty("C0MMIN")
+	Global("C0MMinRomanceActive","GLOBAL",2)
+	Global("O#TeriMatch","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("O#TeriMatch","GLOBAL",0)
+END
+
+IF
+	InParty("L#DUSKY")
+	InParty("C0MMIN")
+	Global("C0MMinRomanceActive","GLOBAL",2)
+	Global("DuskyRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("DuskyRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty("L#INA")
+	InParty("C0MMIN")
+	Global("C0MMinRomanceActive","GLOBAL",2)
+	Global("L#InaRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("L#InaRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty("C0KARIHI")
+	InParty("C0MMIN")
+	Global("C0MMinRomanceActive","GLOBAL",2)
+	Global("C0KarihiRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("C0KarihiRomanceActive","GLOBAL",3)
+END

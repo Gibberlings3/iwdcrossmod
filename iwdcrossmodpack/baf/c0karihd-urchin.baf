@@ -1,0 +1,23 @@
+// CROSSMOD - URCHIN REST BANTER
+
+IF
+    InParty(Myself)
+	InParty("L#URCHIN")
+    !StateCheck(Myself,CD_STATE_NOTVALID)
+    !StateCheck("L#URCHIN",CD_STATE_NOTVALID)
+	Global("C0KarihiUrchinBanter1","GLOBAL",1)
+	Global("C0KarihiUrchinRestTalk","GLOBAL",0)
+	GlobalTimerExpired("C0KarihiUrchinRestTalkTimer","GLOBAL")
+	TimeOfDay(NIGHT)
+	AreaType(OUTDOOR)
+THEN
+  RESPONSE #100
+	StartCutSceneMode()
+	CutSceneId("C0Karihi")
+	FadeToColor([20.0],0)
+	Wait(2)
+	FadeFromColor([20.0],0)
+	Wait(2)
+    SetGlobal("C0KarihiUrchinRestTalk","GLOBAL",1)
+	StartDialogueNoSet("L#URCHIN")
+END

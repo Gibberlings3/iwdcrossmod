@@ -1,0 +1,37 @@
+// DENDJELION
+
+IF
+	InParty(Myself)
+	InParty("O#HOLVIR")
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	GlobalGT("L#DendjAfter1stSex","GLOBAL",0)
+	OR(2)
+	Global("O#HolvirMatch","GLOBAL",1)
+	Global("O#HolvirMatch","GLOBAL",2)
+	Global("C0DendjelionHolvirConflict","GLOBAL",0)
+THEN
+  RESPONSE #100
+	SetInterrupt(FALSE)
+	SetGlobal("C0DendjelionHolvirConflict","GLOBAL",1)
+	RealSetGlobalTimer("C0IWD_ROM_CONFLICT_TIMER","LOCALS",5)
+	SetInterrupt(TRUE)
+END
+
+IF
+	InParty(Myself)
+	InParty("O#HOLVIR")
+	InMyArea(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	RealGlobalTimerExpired("C0IWD_ROM_CONFLICT_TIMER","LOCALS")
+	OR(2)
+	Global("O#HolvirMatch","GLOBAL",1)
+	Global("O#HolvirMatch","GLOBAL",2)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("C0DendjelionHolvirConflict","GLOBAL",1)
+THEN
+RESPONSE #100
+	SetGlobal("C0DendjelionHolvirConflict","GLOBAL",2)
+	StartDialogueNoSet(Player1)
+END
