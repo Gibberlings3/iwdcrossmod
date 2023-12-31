@@ -8,7 +8,7 @@ See("L#DENDJELION")
 CombatCounter(0)
 !See([ENEMY])
 Global("L#DENDJELIONOrraBanter1","GLOBAL",0)~ THEN L#ORRAB L#DENDJELION-ORRA-BANTER-1
-~I met many adventurers of doubtful morality but you, Dendjelion, are nothing else but an agent of the most pitful ideas and urges.~ 
+~I met many adventurers of doubtful morality but you, Dendjelion, are nothing else but an agent of the most pitiful ideas and urges.~ 
 DO ~IncrementGlobal("L#DENDJELIONOrraBanter1","GLOBAL",1)~
 == L#DENDJB ~Hah, yeah! That would be me! And you know what? I'm proud of it.~
 == L#ORRAB ~Proud? There's nothing to be proud of. Rarely I use such words but you disgust me.~

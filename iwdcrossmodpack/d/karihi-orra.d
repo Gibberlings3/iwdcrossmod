@@ -28,7 +28,7 @@ See("C0Karihi")
 CombatCounter(0)
 !See([ENEMY])
 Global("C0KarihiOrraBanter1","GLOBAL",1)~ THEN L#OrraB KARIHI-Orra-BANTER-2
-~I suppose I should just ask you directly - do you dislike me, Kerihi?~ 
+~I suppose I should just ask you directly - do you dislike me, Karihi?~ 
 DO ~IncrementGlobal("C0KarihiOrraBanter1","GLOBAL",1)~
 == BC0KARIH ~No. Should I?~
 == L#OrraB ~Of course not, but you don't exactly seem to be thrilled by my presence in this group. But maybe I'm just making things up...~

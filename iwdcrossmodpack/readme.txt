@@ -153,12 +153,12 @@ Male: Dusky, Karihi, Nella, Teri
 Female: Ina, Holvir, Korin
 Both: Dendjelion, Minerva, Oak-Maw, Tipps
 
-L'anna's romance starts later in game. Her romance does not include conflict talks, but she won't start a romance if you are romantically involved with another NPC.
-Cassia will no longer start any romantic talks if you reach advanced romance state with any of the other romanceable characters. 
+L'anna's romance starts later in the game. Her romance does not include conflict talks, but she won't start a romance if you are romantically involved with another NPC.
+Cassia will no longer start any romantic talks if you reach an advanced romance state with any of the other romanceable characters.
 
-Additionally, the mod includes other conflicts - some of them are due to uncompatible world views na ideologies. These conflicts are optional and may be skipped during the setup: 
-- Holvir and Dendjelion will have a conflict with each other: this conflict may potentially result in the two fighting each other, unless the PC has a Charisma of 18+;
+Additionally, the mod includes other conflicts - some of them are due to incompatible world views and ideologies. These conflicts are optional and may be skipped during the setup:
+- Holvir and Dendjelion will have a conflict with each other: this conflict may potentially result in the two fightings each other unless the PC has a Charisma of 18+;
 - Cassia and Dendjelion will have a conflict with may not be stopped when triggered; furthermore, Cassia won't accept Dendjelion killing Holvir or Noon (Dendjelion's opponent) - that is also coded to happen directly into Cassia NPC and may happen with or without IWD Crossmod Banter Pack installed;
-- Cassia and T'viy will have a conflict which may be stopped by the main character if that character's charisma is high enough (13+).
+- Cassia and T'viy will have a conflict that may be stopped by the main character if that character's charisma is high enough (13+).
 
-If Dendjelion kills Holvir, the PC can choose (and be encouraged by some party members) to avenge him. Sparing Dendjelion leads to a -2 penalty to Reputation and breaks romance with Korin, Nella, Teri and Minerva. Additionally, Dendjelion will have new banters with other party members referencing the conflict, with Korin and Nella potentially choosing to leave the party unless the PC is persuasive enough. 
+If Dendjelion kills Holvir, the PC can choose (and be encouraged by some party members) to avenge him. Sparing Dendjelion leads to a -2 penalty to Reputation and breaks romance with Korin, Nella, Teri, and Minerva. Additionally, Dendjelion will have new banters with other party members referencing the conflict, with Korin and Nella potentially choosing to leave the party unless the PC is persuasive enough. 

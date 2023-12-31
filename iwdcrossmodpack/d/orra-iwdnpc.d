@@ -47,7 +47,7 @@ Global("L#ORRAKorinBanter1","GLOBAL",0)~ THEN BO#KORIN L#ORRAKorinBanter1
 ~You clearly have this sensitivity many artists would kill for. It's a rare thing.~
 DO ~IncrementGlobal("L#ORRAKorinBanter1","GLOBAL",1)~
 ==L#ORRAB ~Well, if I wasn't already taught the art of combat, arcane and divine magic, perhaps I would become an artist myself.~
-==L#ORRAB ~However, I was always more interested in more... pragmatic kind of art. Like architecture. Pottery. Wood carving.~
+==L#ORRAB ~However, I was always more interested in the more... pragmatic kind of art. Like architecture. Pottery. Wood carving.~
 ==BO#KORIN ~Still, all of those are a kind of art.~
 ==L#ORRAB ~Indeed, they are. They always allowed me to fulfill my wish to create something material that could bring them joy.~
 ==BO#KORIN ~That can most certainly have kathartic potential.~
@@ -119,7 +119,7 @@ Global("L#ORRANellaBanter1","GLOBAL",1)~ THEN L#ORRAB L#ORRANellaBanter2
 ~I may need your help, Nella.~
 DO ~IncrementGlobal("L#ORRANellaBanter1","GLOBAL",1)~
 ==BO#NELLA ~Yes? What kind of help?~
-==L#ORRAB ~I think that las beast scratched me somewhere near my spine. Could you please take a look?~
+==L#ORRAB ~I think that last beast scratched me somewhere near my spine. Could you please take a look?~
 ==BO#NELLA ~Of course.~
 ==BO#NELLA ~Well... you're right. It's a nasty scratch. It may need some help if it's to heal properly. I'll clean this wound. It may also require a few stitches.~
 ==L#ORRAB ~Is that something you could help me with? It's hard to heal it properly or apply any ointments while I can't even see it.~
@@ -174,7 +174,7 @@ See("L#ORRA")
 CombatCounter(0)
 !See([ENEMY])
 Global("L#ORRATeriBanter1","GLOBAL",0)~ THEN BO#TERI L#ORRATeriBanter1
-~Hey, Orra! I was wondering: have you ever stole anything?~
+~Hey, Orra! I was wondering: have you ever stolen anything?~
 DO ~IncrementGlobal("L#ORRATeriBanter1","GLOBAL",1)~
 ==L#ORRAB ~I...~
 ==L#ORRAB ~...~

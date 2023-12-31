@@ -11,7 +11,7 @@ Global("L#ORRADuskyBanter1","GLOBAL",0)~ THEN L#DUSKYB ORRA-DUSKY-BANTER-1
 ~Well... and another pick got crooked. Luckily, I still have two spare ones.~
 DO ~IncrementGlobal("L#ORRADuskyBanter1","GLOBAL",1)~
 == L#ORRAB ~I think you're the first person I know that combines thievery and divine powers.~
-== L#DUSKYB ~Is that so? Well, you already know some divine tricks... Haven't you stole a heart or two before?~
+== L#DUSKYB ~Is that so? Well, you already know some divine tricks... Haven't you stolen a heart or two before?~
 == L#ORRAB ~No and... I'm not sure if I'm comfortable with such jokes. Sorry, but you're pulling a quite personal string.~
 == L#DUSKYB ~I see. Well, I may like dirty tricks, but I'm not cruel. I won't mention it again.~
 EXIT

@@ -27,10 +27,10 @@ CombatCounter(0)
 Global("L#OrraTippsBanter1","GLOBAL",1)~ THEN L#OrraB ORRA-TIPPS-BANTER-2
 ~You mentioned that you read some books about Kozakura. Are they a common good in libraries and book shops?~ 
 DO ~IncrementGlobal("L#OrraTippsBanter1","GLOBAL",1)~
-== L#TipB ~If you know where to look for.~
+== L#TipB ~If you know where to look for them.~
 == L#TipB ~Also, I like to know things. Learn about different kinds of magic.~
 == L#OrraB ~You really must be quite a book worm.~
-== L#TipB ~well, you can call me a book WYRM. No... a BOOK DRAGON.~
+== L#TipB ~Well, you can call me a book WYRM. No... a BOOK DRAGON.~
 == L#OrraB ~Hah. Well. You are quite dedicated when it comes to knowledge.~
 == L#TipB ~Of course I am!~
 EXIT
