@@ -71,7 +71,7 @@ IF~~THEN REPLY ~Hey, talk when we've stopped. You're slowing me down.~ EXTERN L#
 CHAIN L#TIPB L#DENDJELION-TIPPS-BANTER-4-1
 ~Ha! Don't be jealous, <PLAYER1>.~
 ==L#TIPB ~I've made a point to break every common perception long-legged folk think about ouw kin. We're just not respected enough, being short and known for our pranks and smoking.~
-==L#DENJB ~I know. It's annoyin' as hell.~
+==L#DENDJB ~I know. It's annoyin' as hell.~
 ==L#TIPB ~We have to be a part of these great tales so they'll know that we've got powerful sorcerers and blackguards among us, don't you agree?~
 EXIT
 

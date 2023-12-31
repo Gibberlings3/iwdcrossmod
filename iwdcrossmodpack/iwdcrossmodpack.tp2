@@ -224,6 +224,20 @@ ACTION_IF MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ AND MOD_IS_INSTALLED 
 	COMPILE ~%MOD_FOLDER%/d/Dendjelion-oak.d~
 END
 
+// Dendjelion - Tipps
+ACTION_IF MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ AND MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Dendjelion and Lava's Tipps~
+
+	COMPILE ~%MOD_FOLDER%/d/tipps-dendjelion.d~
+END
+
+// Dendjelion - T'viy
+ACTION_IF MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ AND MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Dendjelion and Lava's T'viy~
+
+	COMPILE ~%MOD_FOLDER%/d/Dendjelion-tviy.d~
+END
+
 // Dendjelion - Urchin
 ACTION_IF MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ AND MOD_IS_INSTALLED ~URCHIN/URCHIN.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Dendjelion and Lava's Urchin~
@@ -266,6 +280,13 @@ ACTION_IF MOD_IS_INSTALLED ~DUSKY/DUSKY.TP2~ ~0~ AND MOD_IS_INSTALLED ~TIPPS/TIP
 	COMPILE ~%MOD_FOLDER%/d/dusky-tipps.d~
 END
 
+// Dusky - T'viy
+ACTION_IF MOD_IS_INSTALLED ~DUSKY/DUSKY.TP2~ ~0~ AND MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Dusky and Lava's T'viy~
+
+	COMPILE ~%MOD_FOLDER%/d/dusky-tviy.d~
+END
+
 // Dusky - Urchin
 ACTION_IF MOD_IS_INSTALLED ~DUSKY/DUSKY.TP2~ ~0~ AND MOD_IS_INSTALLED ~URCHIN/URCHIN.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Dusky and Lava's Urchin~
@@ -306,6 +327,13 @@ ACTION_IF MOD_IS_INSTALLED ~INA/INA.TP2~ ~0~ AND MOD_IS_INSTALLED ~TIPPS/TIPPS.T
   PRINT ~Adding crossmod for Lava's Ina and Lava's Tipps~
 
 	COMPILE ~%MOD_FOLDER%/d/ina-tipps.d~
+END
+
+// Ina - T'viy
+ACTION_IF MOD_IS_INSTALLED ~INA/INA.TP2~ ~0~ AND MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Ina and Lava's T'viy~
+
+	COMPILE ~%MOD_FOLDER%/d/Ina-tviy.d~
 END
 
 // Ina - Urchin
@@ -352,6 +380,13 @@ ACTION_IF MOD_IS_INSTALLED ~KarihiNPC/KarihiNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~T
 	COMPILE ~%MOD_FOLDER%/d/karihi-tipps.d~
 END
 
+// Karihi - T'viy
+ACTION_IF MOD_IS_INSTALLED ~KarihiNPC/KarihiNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Karihi and Lava's T'viy~
+
+	COMPILE ~%MOD_FOLDER%/d/karihi-tviy.d~
+END
+
 // Karihi - Urchin
 ACTION_IF MOD_IS_INSTALLED ~KarihiNPC/KarihiNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~URCHIN/URCHIN.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for AionZ's Karihi and Lava's Urchin~
@@ -380,6 +415,13 @@ ACTION_IF MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ AND MOD_IS_INSTALLED 
   PRINT ~Adding crossmod for AionZ's Minerva and Lava's Tipps~
 
 	COMPILE ~%MOD_FOLDER%/d/minerva-tipps.d~
+END
+
+// Minerva - T'viy
+ACTION_IF MOD_IS_INSTALLED ~MinervaNPC/MinervaNPC.TP2~ ~0~ AND MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for AionZ's Minerva and Lava's T'viy~
+
+	COMPILE ~%MOD_FOLDER%/d/Minerva-tviy.d~
 END
 
 // Minerva - Urchin
@@ -417,6 +459,13 @@ ACTION_IF MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/IW
 	COMPILE ~%MOD_FOLDER%/d/tipps-iwdnpc.d~
 END
 
+// Tipps - T'viy
+ACTION_IF MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ AND MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Tipps and Lava's T'viy~
+
+	COMPILE ~%MOD_FOLDER%/d/tipps-tviy.d~
+END
+
 // Tipps - Urchin
 ACTION_IF MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ AND MOD_IS_INSTALLED ~URCHIN/URCHIN.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Tipps and Lava's Urchin~
@@ -429,6 +478,13 @@ ACTION_IF MOD_IS_INSTALLED ~URCHIN/URCHIN.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/
   PRINT ~Adding crossmod for Lava's Urchin and Kulyok's Icewind Dale NPCs~
 
 	COMPILE ~%MOD_FOLDER%/d/urchin-iwdnpc.d~
+END
+
+// Urchin - T'viy
+ACTION_IF MOD_IS_INSTALLED ~URCHIN/URCHIN.TP2~ ~0~ AND MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Urchin and Lava's T'viy~
+
+	COMPILE ~%MOD_FOLDER%/d/urchin-tviy.d~
 END
 
 // Minerva - Special Dialogue
