@@ -42,6 +42,16 @@ THEN
 	SetGlobal("C0MMinRomanceActive","GLOBAL",3)
 END
 
+IF
+	InParty("L#DUSKY")
+	InParty("L#LANNA")
+	Global("DuskyRomanceActive","GLOBAL",2)
+	Global("L#LannaRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("L#LannaRomanceActive","GLOBAL",3)
+END
+
 // INA
 
 IF
@@ -150,6 +160,17 @@ THEN
 	SetGlobal("C0KarihiRomanceActive","GLOBAL",3)
 END
 
+IF
+	InParty("O#NELLA")
+	InParty("L#LANNA")
+	Global("O#NellaMatch","GLOBAL",2)
+	Global("L#LannaRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("L#LannaRomanceActive","GLOBAL",3)
+END
+
+
 // TERI
 
 IF
@@ -180,6 +201,16 @@ IF
 THEN
   RESPONSE #100
 	SetGlobal("C0KarihiRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty("O#TERI")
+	InParty("L#LANNA")
+	Global("O#TeriMatch","GLOBAL",2)
+	Global("L#LannaRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("L#LannaRomanceActive","GLOBAL",3)
 END
 
 // KARIHI
@@ -222,6 +253,16 @@ IF
 THEN
   RESPONSE #100
 	SetGlobal("C0MMinRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty("C0KARIHI")
+	InParty("L#LANNA")
+	Global("C0KarihiRomanceActive","GLOBAL",2)
+	Global("L#LannaRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("L#LannaRomanceActive","GLOBAL",3)
 END
 
 // MINERVA
@@ -294,4 +335,14 @@ IF
 THEN
   RESPONSE #100
 	SetGlobal("C0KarihiRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty("L#LANNA")
+	InParty("C0MMIN")
+	Global("C0MMinRomanceActive","GLOBAL",2)
+	Global("L#LannaRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+	SetGlobal("L#LannaRomanceActive","GLOBAL",3)
 END

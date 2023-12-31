@@ -1,6 +1,6 @@
-//OAK-SEVERN
+//TVIY-SEVERN
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("O#SEVERN")
 See("O#SEVERN")
 CombatCounter(0)
@@ -14,9 +14,9 @@ DO ~IncrementGlobal("L#TviySevernBanter","GLOBAL",1)~
 ==L#TviyB ~It should be FORBIDDEN. A horrible HORRIBLE thing to do.~
 EXIT
 
-//OAK-HOLVIR
+//TVIY-HOLVIR
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("O#HOLVIR")
 See("O#HOLVIR")
 CombatCounter(0)
@@ -31,9 +31,9 @@ DO ~IncrementGlobal("L#TviyHolvirBanter","GLOBAL",1)~
 ==BO#HOLVI ~You have a wicked mind. Sometimes I think it's in a state that will never be reached by any gods or powers. It's beyond this world.~
 EXIT
 
-//Tipps-TERI
+//TVIY-TERI
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("L#Tviy")
 See("L#Tviy")
 CombatCounter(0)
@@ -50,9 +50,9 @@ DO ~IncrementGlobal("L#TviyTeriBanter1","GLOBAL",1)~
 ==BO#TERI ~You almost succeeded. Almost.~
 EXIT
 
-//TIPPS-KORIN
+//TVIY-KORIN
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("O#KORIN")
 See("O#KORIN")
 CombatCounter(0)
@@ -71,9 +71,9 @@ DO ~IncrementGlobal("L#TviyKorinBanter","GLOBAL",1)~
 ==BO#KORIN ~If I'm gone, you'll be too.~
 EXIT
 
-//TIPPS-NELLA
+//TVIY-NELLA
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("O#NELLA")
 See("O#NELLA")
 CombatCounter(0)

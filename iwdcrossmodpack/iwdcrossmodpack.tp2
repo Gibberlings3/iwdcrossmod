@@ -1,6 +1,8 @@
 BACKUP ~IWDCrossmodPack/backup~
 AUTHOR ~The Artisan (AionZ)~
-VERSION ~1.0~
+VERSION ~1.4~
+
+README ~IWDCrossmodPack/readme.txt~
 
 AUTO_TRA ~%MOD_FOLDER%/tra/%s~ //~%~
 LANGUAGE 
@@ -115,6 +117,8 @@ ACTION_IF MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
 	APPEND ~interdia.2da~ ~L#URCHIN L#URCHIB L#URCHIB~ UNLESS ~L#URCHIN~
 	APPEND ~interdia.2da~ ~L#TIP L#TIPB L#TIPB~ UNLESS ~L#TIP~
 	APPEND ~interdia.2da~ ~L#OM L#OMB L#OMB~ UNLESS ~L#OM~
+	APPEND ~interdia.2da~ ~L#HOMM L#HOMMB L#HOMMB~ UNLESS ~L#HOMM~
+	APPEND ~interdia.2da~ ~L#LANNA L#LANNAB L#LANNAB~ UNLESS ~L#LANNA~
 END
 
 // Athanasios - Caedriel
@@ -735,6 +739,120 @@ END
 ACTION_IF MOD_IS_INSTALLED ~URCHIN/URCHIN.TP2~ ~0~ AND MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ THEN BEGIN
   PRINT ~Adding crossmod for Lava's Urchin and Lava's T'viy~
 	COMPILE ~%MOD_FOLDER%/d/urchin-tviy.d~
+END
+
+// L'anna - Dendjelion
+ACTION_IF MOD_IS_INSTALLED ~LANNA/LANNA.TP2~ ~0~ AND MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's L'anna and Lava's Dendjelion~
+	COMPILE ~%MOD_FOLDER%/d/lanna-dendjelion.d~
+END
+
+// L'anna - Dusky
+ACTION_IF MOD_IS_INSTALLED ~LANNA/LANNA.TP2~ ~0~ AND MOD_IS_INSTALLED ~DUSKY/DUSKY.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's L'anna and Lava's Dusky~
+	COMPILE ~%MOD_FOLDER%/d/lanna-dusky.d~
+END
+
+// L'anna - Ina
+ACTION_IF MOD_IS_INSTALLED ~LANNA/LANNA.TP2~ ~0~ AND MOD_IS_INSTALLED ~INA/INA.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's L'anna and Lava's Ina~
+	COMPILE ~%MOD_FOLDER%/d/lanna-ina.d~
+END
+
+// L'anna - IWD NPC
+ACTION_IF MOD_IS_INSTALLED ~LANNA/LANNA.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's L'anna and Kulyok's Icewind Dale NPCs~
+	COMPILE ~%MOD_FOLDER%/d/lanna-iwdnpc.d~
+END
+
+// L'anna - Oak-Maw
+ACTION_IF MOD_IS_INSTALLED ~LANNA/LANNA.TP2~ ~0~ AND MOD_IS_INSTALLED ~OAKMAW/OAKMAW.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's L'anna and Lava's Oak-Maw~
+	COMPILE ~%MOD_FOLDER%/d/lanna-oakmaw.d~
+END
+
+// L'anna - Orra
+ACTION_IF MOD_IS_INSTALLED ~LANNA/LANNA.TP2~ ~0~ AND MOD_IS_INSTALLED ~ORRA/ORRA.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's L'anna and Lava's Orra~
+	COMPILE ~%MOD_FOLDER%/d/lanna-orra.d~
+END
+
+// L'anna - Tipps
+ACTION_IF MOD_IS_INSTALLED ~LANNA/LANNA.TP2~ ~0~ AND MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's L'anna and Lava's Tipps~
+	COMPILE ~%MOD_FOLDER%/d/lanna-tipps.d~
+END
+
+// L'anna - T'viy
+ACTION_IF MOD_IS_INSTALLED ~LANNA/LANNA.TP2~ ~0~ AND MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's L'anna and Lava's T'viy~
+	COMPILE ~%MOD_FOLDER%/d/lanna-tviy.d~
+END
+
+// L'anna - Urchin
+ACTION_IF MOD_IS_INSTALLED ~LANNA/LANNA.TP2~ ~0~ AND MOD_IS_INSTALLED ~URCHIN/URCHIN.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's L'anna and Lava's Urchin~
+	COMPILE ~%MOD_FOLDER%/d/lanna-urchin.d~
+END
+
+// Hommet - Dendjelion
+ACTION_IF MOD_IS_INSTALLED ~HOMMET/HOMMET.TP2~ ~0~ AND MOD_IS_INSTALLED ~DENDJELION/DENDJELION.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Hommet and Lava's Dendjelion~
+	COMPILE ~%MOD_FOLDER%/d/hommet-dendjelion.d~
+END
+
+// Hommet - Dusky
+ACTION_IF MOD_IS_INSTALLED ~HOMMET/HOMMET.TP2~ ~0~ AND MOD_IS_INSTALLED ~DUSKY/DUSKY.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Hommet and Lava's Dusky~
+	COMPILE ~%MOD_FOLDER%/d/hommet-dusky.d~
+END
+
+// Hommet - Ina
+ACTION_IF MOD_IS_INSTALLED ~HOMMET/HOMMET.TP2~ ~0~ AND MOD_IS_INSTALLED ~INA/INA.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Hommet and Lava's Ina~
+	COMPILE ~%MOD_FOLDER%/d/hommet-ina.d~
+END
+
+// Hommet - IWD NPC
+ACTION_IF MOD_IS_INSTALLED ~HOMMET/HOMMET.TP2~ ~0~ AND MOD_IS_INSTALLED ~IWDNPC/IWDNPC.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Hommet and Kulyok's Icewind Dale NPCs~
+	COMPILE ~%MOD_FOLDER%/d/hommet-iwdnpc.d~
+END
+
+// Hommet - Oak-Maw
+ACTION_IF MOD_IS_INSTALLED ~HOMMET/HOMMET.TP2~ ~0~ AND MOD_IS_INSTALLED ~OAKMAW/OAKMAW.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Hommet and Lava's Oak-Maw~
+	COMPILE ~%MOD_FOLDER%/d/hommet-oakmaw.d~
+END
+
+// Hommet - Orra
+ACTION_IF MOD_IS_INSTALLED ~HOMMET/HOMMET.TP2~ ~0~ AND MOD_IS_INSTALLED ~ORRA/ORRA.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Hommet and Lava's Orra~
+	COMPILE ~%MOD_FOLDER%/d/hommet-orra.d~
+END
+
+// Hommet - Tipps
+ACTION_IF MOD_IS_INSTALLED ~HOMMET/HOMMET.TP2~ ~0~ AND MOD_IS_INSTALLED ~TIPPS/TIPPS.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Hommet and Lava's Tipps~
+	COMPILE ~%MOD_FOLDER%/d/hommet-tipps.d~
+END
+
+// Hommet - T'viy
+ACTION_IF MOD_IS_INSTALLED ~HOMMET/HOMMET.TP2~ ~0~ AND MOD_IS_INSTALLED ~TVIY/TVIY.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Hommet and Lava's T'viy~
+	COMPILE ~%MOD_FOLDER%/d/hommet-tviy.d~
+END
+
+// Hommet - Urchin
+ACTION_IF MOD_IS_INSTALLED ~HOMMET/HOMMET.TP2~ ~0~ AND MOD_IS_INSTALLED ~URCHIN/URCHIN.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Hommet and Lava's Urchin~
+	COMPILE ~%MOD_FOLDER%/d/hommet-urchin.d~
+END
+
+// Hommet - L'anna
+ACTION_IF MOD_IS_INSTALLED ~LANNA/LANNA.TP2~ ~0~ AND MOD_IS_INSTALLED ~HOMMET/HOMMET.TP2~ ~0~ THEN BEGIN
+  PRINT ~Adding crossmod for Lava's Hommet and Lava's L'anna~
+	COMPILE ~%MOD_FOLDER%/d/hommet-lanna.d~
 END
 
 // Minerva - Special Dialogue

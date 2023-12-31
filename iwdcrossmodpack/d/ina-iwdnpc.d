@@ -1,6 +1,6 @@
 //INA-SEVERN
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("O#SEVERN")
 See("O#SEVERN")
 CombatCounter(0)
@@ -19,7 +19,7 @@ DO ~IncrementGlobal("L#InaSevernBanter","GLOBAL",1)~
 ==L#INAB ~Well... I will keep that in mind, Severn.~
 EXIT
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("O#SEVERN")
 See("O#SEVERN")
 CombatCounter(0)
@@ -39,7 +39,7 @@ EXIT
 
 //INA-HOLVIR
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("O#HOLVIR")
 See("O#HOLVIR")
 CombatCounter(0)
@@ -57,7 +57,7 @@ DO ~IncrementGlobal("L#InaHolvirBanter","GLOBAL",1)~
 ==BO#HOLVI IF ~IsGabber("O#NELLA") !StateCheck("O#NELLA",CD_STATE_NOTVALID)~ THEN ~Perhaps you are right.~
 EXIT
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("O#HOLVIR")
 See("O#HOLVIR")
 CombatCounter(0)
@@ -80,7 +80,7 @@ EXIT
 
 //Ina-TERI
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("L#INA")
 See("L#INA")
 CombatCounter(0)
@@ -98,7 +98,7 @@ DO ~IncrementGlobal("L#InaTeriBanter1","GLOBAL",1)~
 ==L#INAB ~I think you have enough tricks in your arsenal for the both of us.~
 EXIT
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("O#TERI")
 See("O#TERI")
 CombatCounter(0)
@@ -120,7 +120,7 @@ EXIT
 
 //Ina-KORIN
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("O#KORIN")
 See("O#KORIN")
 CombatCounter(0)
@@ -138,7 +138,7 @@ DO ~IncrementGlobal("L#InaKorinBanter","GLOBAL",1)~
 ==BO#KORIN ~It does. But without giving the land a part of yourself in return, it cannot truly be called a bond.~
 EXIT
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("O#KORIN")
 See("O#KORIN")
 CombatCounter(0)
@@ -158,7 +158,7 @@ EXIT
 
 //Ina-NELLA
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("O#NELLA")
 See("O#NELLA")
 CombatCounter(0)
@@ -176,7 +176,7 @@ DO ~IncrementGlobal("L#InaNellaBanter1","GLOBAL",1)~
 ==L#INAB ~It is the same for me.~
 EXIT
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("L#INA")
 See("L#INA")
 !StateCheck("L#INA",CD_STATE_NOTVALID)

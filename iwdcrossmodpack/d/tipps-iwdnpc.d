@@ -1,6 +1,6 @@
 //TIPPS-SEVERN
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("O#SEVERN")
 See("O#SEVERN")
 CombatCounter(0)
@@ -19,7 +19,7 @@ DO ~IncrementGlobal("L#TIPSevernBanter","GLOBAL",1)~
 ==BO#SEVER ~Don't be so surprised. Such things happen to all creative souls... even ones as skilled as Jackoo of the Seven Lands.~
 EXIT
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("O#SEVERN")
 See("O#SEVERN")
 CombatCounter(0)
@@ -38,7 +38,7 @@ EXIT
 
 //TIPPS-HOLVIR
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("O#HOLVIR")
 See("O#HOLVIR")
 CombatCounter(0)
@@ -55,7 +55,7 @@ EXIT
 
 //Tipps-TERI
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("L#TIP")
 See("L#TIP")
 CombatCounter(0)
@@ -73,7 +73,7 @@ DO ~IncrementGlobal("L#TIPTeriBanter1","GLOBAL",1)~
 ==L#TIPB ~Hold on, I haven't agreed to anything yet. I just said it's a good idea. Give me some time, then I'll tell you what I think.~
 EXIT
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("L#TIP")
 See("L#TIP")
 CombatCounter(0)
@@ -91,7 +91,7 @@ EXIT
 
 //TIPPS-KORIN
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("O#KORIN")
 See("O#KORIN")
 CombatCounter(0)
@@ -108,7 +108,7 @@ DO ~IncrementGlobal("L#TIPKorinBanter","GLOBAL",1)~
 ==BO#KORIN ~You are not wrong. But I cannot say for certain—not yet. I am no longer a mage, but I still recognize many things others cannot. I will observe you, though I will not be a hindrance... for it seems <PLAYER1> trusts you.~
 EXIT
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("O#KORIN")
 See("O#KORIN")
 CombatCounter(0)
@@ -125,7 +125,7 @@ EXIT
 
 //TIPPS-NELLA
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("O#NELLA")
 See("O#NELLA")
 CombatCounter(0)
@@ -148,7 +148,7 @@ DO ~IncrementGlobal("L#TipNellaBanter1","GLOBAL",1)~
 ==BO#NELLA ~Next time, ask if you need any assistance. That is how comrades should treat each other.~
 EXIT
 
-CHAIN IF WEIGHT #-1 ~IsGabber(Myself)
+CHAIN IF WEIGHT #-1 ~
 IsGabber("O#NELLA")
 See("O#NELLA")
 CombatCounter(0)
