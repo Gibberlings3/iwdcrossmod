@@ -20,9 +20,10 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY ~mod_array~ BEGIN
   ~Nirik~, ~The Artisan~, ~nirik~, ~niriknpc/niriknpc.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // 
   ~Oak-Maw~, ~Lava~, ~oak-maw~, ~oakmaw/oakmaw.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // 
   ~Orra~, ~Lava~, ~orra~, ~orra/orra.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // 
-  ~T'viy~, ~Lava~, ~t'viy~, ~tviy/tviy.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // 
+  ~T'viy~, ~Lava~, ~tviy~, ~tviy/tviy.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // 
   ~Tal'zkah~, ~The Artisan~, ~talzkah~, ~talzkahnpc/talzkahnpc.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // 
   ~Tipps~, ~Lava~, ~tipps~, ~tipps/tipps.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // 
   ~Urchin~, ~Lava~, ~urchin~, ~urchin/urchin.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // 
+  ~Xikâsz~, ~Lava~, ~xikasz~, ~~, ~l#xikb.dlg~, ~~, ~~, ~~, ~~, ~~ => ~-1~ // Can be component 0 or 1, so use file
 
 END
