@@ -3,20 +3,3 @@ OUTER_SET bantprob2 = 0
 
 // Banter initiation script - hopefully I find a better way
 EXTEND_TOP ~baldur.bcs~ ~%MOD_FOLDER%/misc/timing.baf~ EVAL
-
-<<<<<<<<./inline/iwdcrossmodpack/begin_banter.d
-BEGIN %file%
->>>>>>>>
-
-ACTION_FOR_EACH file IN 
-  bo#holvi bo#korin bo#nella bo#sever bo#teri l#dendjb l#duskyb l#inab l#omb l#orrab l#tipb 
-  l#tviyb l#urchib bc0athan bc0caed bc0karih bc0mmin bc0nirik bc0talz l#hommb l#lannab awcassb
-BEGIN
-
-  ACTION_IF !FILE_EXISTS_IN_GAME ~%file%.dlg~ THEN BEGIN
-  
-    COMPILE ~./inline/iwdcrossmodpack/begin_banter.d~ EVALUATE_BUFFER
-    
-  END
-
-END  

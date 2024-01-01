@@ -9,7 +9,9 @@ OUTER_SPRINT basegame ~iwd~
 OUTER_SPRINT exp_game ~how~
 
 OUTER_SET enhanced_edition = 1
-OUTER_SPRINT ~tra_location~ ~%MOD_FOLDER%/languages~
+OUTER_SPRINT ~tra_location~ ~%MOD_FOLDER%/languages~ 
+
+INCLUDE ~%MOD_FOLDER%/lib/banters.tpa~ 
 
 /*
 // set some vars for later

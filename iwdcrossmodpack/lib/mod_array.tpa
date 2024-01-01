@@ -9,21 +9,21 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY ~mod_array~ BEGIN
   ~Athanasios~, ~The Artisan~, ~athanasios~, ~athanasiosnpc/athanasiosnpc.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // Missing all banters?
   ~Caedriel~, ~The Artisan~, ~caedriel~, ~caedrielnpc/caedrielnpc.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // Missing all banters?
   ~Cassia~, ~Arvendor~, ~cassia~, ~cassianpc/cassianpc.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // 
-  ~Dendjelion~, ~Lava~, ~dendjelion~, ~dendjelion/dendjelion.tp2~, ~~, ~0~, ~~, ~~, ~L#DENDJ~, ~~ => ~-1~ // Missing Tal’zkah
+  ~Dendjelion~, ~Lava~, ~dendjelion~, ~dendjelion/dendjelion.tp2~, ~~, ~0~, ~~, ~~, ~l#dendj~, ~~ => ~-1~ // Missing Tal’zkah
   ~Dusky~, ~Lava~, ~dusky~, ~dusky/dusky.tp2~, ~~, ~0~, ~~, ~~, ~l#dusky~, ~~ => ~-1~ // 
   ~Hommet~, ~Lava~, ~hommet~, ~hommet/hommet.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // 
   ~Ina~, ~Lava~, ~ina~, ~ina/ina.tp2~, ~~, ~0~, ~~, ~~, ~l#ina.bcs~, ~~ => ~-1~ // 
-  ~IWD NPCs~, ~Kulyok~, ~iwdnpc~, ~iwdnpc/iwdnpc.tp2~, ~~, ~0~, ~~, ~~, ~O#HOLVIR~, ~~ => ~-1~ // 
-  ~Karihi~, ~The Artisan~, ~karihi~, ~karihinpc/karihinpc.tp2~, ~~, ~0~, ~~, ~~, ~C0KARIHS~, ~~ => ~-1~ // 
+  ~IWD NPCs~, ~Kulyok~, ~iwdnpc~, ~iwdnpc/iwdnpc.tp2~, ~~, ~0~, ~~, ~~, ~o#holvir~, ~~ => ~-1~ // 
+  ~Karihi~, ~The Artisan~, ~karihi~, ~karihinpc/karihinpc.tp2~, ~~, ~0~, ~~, ~~, ~c0karihs~, ~~ => ~-1~ // 
   ~L’anna~, ~Lava~, ~lanna~, ~lanna/lanna.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // 
   ~Minerva~, ~The Artisan~, ~minerva~, ~minervanpc/minervanpc.tp2~, ~~, ~0~, ~~, ~~, ~c0mmins.bcs~, ~~ => ~-1~ // 
   ~Nirik~, ~The Artisan~, ~nirik~, ~niriknpc/niriknpc.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // 
   ~Oak-Maw~, ~Lava~, ~oak-maw~, ~oakmaw/oakmaw.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // 
   ~Orra~, ~Lava~, ~orra~, ~orra/orra.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // 
-  ~T'viy~, ~Lava~, ~tviy~, ~tviy/tviy.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // 
   ~Tal'zkah~, ~The Artisan~, ~talzkah~, ~talzkahnpc/talzkahnpc.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // 
   ~Tipps~, ~Lava~, ~tipps~, ~tipps/tipps.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // 
+  ~T'viy~, ~Lava~, ~tviy~, ~tviy/tviy.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // 
   ~Urchin~, ~Lava~, ~urchin~, ~urchin/urchin.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // 
-  ~Xikâsz~, ~Lava~, ~xikasz~, ~~, ~l#xikb.dlg~, ~~, ~~, ~~, ~~, ~~ => ~-1~ // Can be component 0 or 1, so use file
+  ~Xikâsz~, ~Lava~, ~xikasz~, ~~, ~l#xik.cre~, ~~, ~~, ~~, ~~, ~~ => ~-1~ // Can be component 0 or 1, so use file
 
 END

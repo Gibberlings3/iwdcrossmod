@@ -15,15 +15,13 @@
  @102 = ~Requires Romance Conflicts, IWD NPC, and Dendjelion~
 
 // component names
-@1000 = ~Crossmod Banter Pack~
+@1000 = ~Install Crossmod Banters With This Minimum Delay Between Banters:~
+@1001 = ~5 minutes~
+@1002 = ~10 minutes~
+@1003 = ~15 minutes (recommended)~
+@1004 = ~30 minutes~
+@1005 = ~45 minutes~
+@1006 = ~1 hour~
 
 @3000 = ~Crossmod Romance Conflicts~
 @3100 = ~Conflict Between Kulyok's Holvir and Lava's Dendjelion~
-
-@5000 = ~Set Minimum Delay Between Banters~
-@5001 = ~5 minutes~
-@5002 = ~10 minutes~
-@5003 = ~15 minutes (recommended)~
-@5004 = ~30 minutes~
-@5005 = ~45 minutes~
-@5006 = ~1 hour~

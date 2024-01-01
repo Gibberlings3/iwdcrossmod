@@ -1,0 +1,51 @@
+<<<<<<<<./inline/iwdcrossmodpack/begin_banter.d
+BEGIN %banter%
+>>>>>>>>
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY cd_banters BEGIN
+  awcass   => awcassb
+  c0athan  => bc0athan
+  c0caed   => bc0caed
+  c0karihi => bc0karih
+  c0mmin   => bc0mmin
+  c0nirik  => bc0nirik
+  c0talz   => bc0talz
+  o#holvir => bo#holvi 
+  o#korin  => bo#korin 
+  o#nella  => bo#nella 
+  o#severn => bo#sever
+  o#teri   => bo#teri
+  l#dendj  => l#dendjb
+  l#dusky  => l#duskyb
+  l#homm   => l#hommb
+  l#ina    => l#inab
+  l#lanna  => l#lannab
+  l#om     => l#omb
+  l#orra   => l#orrab
+  l#tip    => l#tipb
+  l#tviy   => l#tviyb
+  l#urchin => l#urchib
+  l#xik    => l#xikb
+END
+
+ACTION_PHP_EACH cd_banters AS dv => banter BEGIN
+
+  ACTION_IF !FILE_EXISTS_IN_GAME ~%banter%.dlg~ THEN BEGIN
+  
+    COMPILE ~./inline/iwdcrossmodpack/begin_banter.d~ EVALUATE_BUFFER // create banter file if it's not alreayd present
+    
+  END
+  
+  APPEND ~interdia.2da~ ~%dv% %banter% %banter%~ UNLESS ~^%dv%[ %TAB%]~ // add interdia entry if not already present
+  
+END
+
+COPY_EXISTING ~interdia.2da~ ~override~
+  PATCH_FOR_EACH dv IN // remove leftover bg2 references 
+    aerie anomen cernd edwin haerdalis jaheira jan keldorn korgan mazzy minsc 
+    nalia valygar viconia yoshimo imoen2 sarevok rasaad dorn hexxat neera
+  BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~^%dv%[ %TAB%].+[%LNL%%MNL%%WNL%]+~ ~~
+  END
+  PRETTY_PRINT_2DA
+  BUT_ONLY   
