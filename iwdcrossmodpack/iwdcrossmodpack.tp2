@@ -11,7 +11,7 @@ ALWAYS
   
 END
 
-VERSION ~v2 (dev branch)~ 
+VERSION ~v2~ 
 
 README ~iwdcrossmodpack/readme-iwdcrossmodpack.html~
 
@@ -167,3 +167,26 @@ INCLUDE ~%MOD_FOLDER%/lib/common.tpa~
 //  INCLUDE ~%MOD_FOLDER%/lib/common.tpa~
 //
 //END
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// holvir-dendjelion conflict                       \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @3100 DESIGNATED 31 /* Crossmod Romance Conflicts */
+//REQUIRE_PREDICATE GAME_IS ~iwd how totlm iwdee~ @100 // only iwdee for now
+REQUIRE_PREDICATE GAME_IS ~iwdee~ @100
+REQUIRE_PREDICATE ((MOD_IS_INSTALLED ~iwdcrossmodpack/iwdcrossmodpack.tp2~ ~30~) AND  // crossmod romance conflicts
+                   (MOD_IS_INSTALLED ~dendjelion/dendjelion.tp2~ ~0~)            AND  // dendjelion installed
+                   (MOD_IS_INSTALLED ~iwdnpc/iwdnpc.tp2~ ~0~))                   @102 // iwd npc installed
+LABEL ~cd_crossmod_banter_pack_iwd_holvir-dendjelion_conflict~
+
+EXTEND_TOP ~l#dendj.bcs~  ~%MOD_FOLDER%/files/dendjelion_iwdnpc/dendjelion.baf~
+EXTEND_TOP ~o#holvir.bcs~ ~%MOD_FOLDER%/files/dendjelion_iwdnpc/holvir.baf~
+
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/files/special_dendjelion_iwdnpc.d~ 
+  USING ~%tra_location%/english/rc_iwd_dendjelion_iwdnpc.tra~ ~%tra_location%/%LANGUAGE%/rc_iwd_dendjelion_iwdnpc.tra~
+

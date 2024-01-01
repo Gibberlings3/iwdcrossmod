@@ -1,21 +1,25 @@
 // strings for the log: banter installation
-@1    = ~: Mod detected, checking for crossmod content.~
-@2    = ~: Mod not detected, moving to next mod.~
-@3    = ~     -- Compiling crossmod banter for ~
-@4    = ~     -- Executing crossmod code for ~
+   @1 = ~: Mod detected, checking for crossmod content.~
+   @2 = ~: Mod not detected, moving to next mod.~
+   @3 = ~     -- Compiling crossmod banter for ~
+   @4 = ~     -- Executing crossmod code for ~
 // strings for the log: conflict installation
-@5    = ~: Mod detected, installing romance conflicts for ~
-@6    = ~: Mod not detected, skipping romance conflicts for ~
+   @5 = ~: Mod detected, installing romance conflicts for ~
+   @6 = ~: Mod not detected, skipping romance conflicts for ~
 // language enforcement
-@7    = ~     -- Crossmod content found but skipping due to language settings: ~
+   @7 = ~     -- Crossmod content found but skipping due to language settings: ~
 
 // installer messages
-@100  = ~This mod is only available for IWDEE.~
-@101  = ~Unitary install is no longer supported, please select content below.~
+ @100 = ~This mod is only available for IWDEE.~
+ @101 = ~Unitary install is no longer supported, please select content below.~
+ @102 = ~Requires Romance Conflicts, IWD NPC, and Dendjelion~
 
 // component names
-@1000 = ~Crossmod Banter Pack for Icewind Dale~
+@1000 = ~Crossmod Banter Pack~
+
 @3000 = ~Crossmod Romance Conflicts~
+@3100 = ~Conflict Between Kulyok's Holvir and Lava's Dendjelion~
+
 @5000 = ~Set Minimum Delay Between Banters~
 @5001 = ~5 minutes~
 @5002 = ~10 minutes~
