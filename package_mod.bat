@@ -5,7 +5,7 @@ REM /* this initializes the values for the different variables referenced in com
 call "%~dp0..\ModPackaging\utilities\ie_games.bat"
 
 REM /* MODIFY: set the values of the 3 variables below to reflect the current mod version */
-set "mod_name=Crossmod Pack for Icewind Dale"
+set "mod_name=Icewind Dale Crossmod Banter Pack"
 set mod_version=v2
 set mod_folder=iwdcrossmodpack
 
