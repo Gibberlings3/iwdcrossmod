@@ -10,6 +10,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY ~mod_array~ BEGIN
   ~Caedriel~, ~The Artisan~, ~caedriel~, ~caedrielnpc/caedrielnpc.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // Missing all banters?
   ~Cassia~, ~Arvendor~, ~cassia~, ~cassianpc/cassianpc.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // 
   ~Dendjelion~, ~Lava~, ~dendjelion~, ~dendjelion/dendjelion.tp2~, ~~, ~0~, ~~, ~~, ~l#dendj~, ~~ => ~-1~ // Missing Tal’zkah
+  ~Noon~, ~Lava~, ~noon~, ~~, ~l#noon.cre~, ~~, ~~, ~~, ~~, ~~ => ~-1~ //
   ~Dusky~, ~Lava~, ~dusky~, ~dusky/dusky.tp2~, ~~, ~0~, ~~, ~~, ~l#dusky~, ~~ => ~-1~ // 
   ~Hommet~, ~Lava~, ~hommet~, ~hommet/hommet.tp2~, ~~, ~0~, ~~, ~~, ~~, ~~ => ~-1~ // 
   ~Ina~, ~Lava~, ~ina~, ~ina/ina.tp2~, ~~, ~0~, ~~, ~~, ~l#ina.bcs~, ~~ => ~-1~ // 

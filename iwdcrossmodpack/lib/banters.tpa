@@ -3,29 +3,30 @@ BEGIN %banter%
 >>>>>>>>
 
 ACTION_DEFINE_ASSOCIATIVE_ARRAY cd_banters BEGIN
-  awcass   => awcassb
-  c0athan  => bc0athan
-  c0caed   => bc0caed
-  c0karihi => bc0karih
-  c0mmin   => bc0mmin
-  c0nirik  => bc0nirik
-  c0talz   => bc0talz
-  o#holvir => bo#holvi 
-  o#korin  => bo#korin 
-  o#nella  => bo#nella 
-  o#severn => bo#sever
-  o#teri   => bo#teri
-  l#dendj  => l#dendjb
-  l#dusky  => l#duskyb
-  l#homm   => l#hommb
-  l#ina    => l#inab
-  l#lanna  => l#lannab
-  l#om     => l#omb
-  l#orra   => l#orrab
-  l#tip    => l#tipb
-  l#tviy   => l#tviyb
-  l#urchin => l#urchib
-  l#xik    => l#xikb
+  awcass        => awcassb
+  c0athan       => bc0athan
+  c0caed        => bc0caed
+  c0karihi      => bc0karih
+  c0mmin        => bc0mmin
+  c0nirik       => bc0nirik
+  c0talz        => bc0talz
+  o#holvir      => bo#holvi 
+  o#korin       => bo#korin 
+  o#nella       => bo#nella 
+  o#severn      => bo#sever
+  o#teri        => bo#teri
+  l#dendjelion  => l#dendjb
+  l#dusky       => l#duskyb
+  l#homm        => l#hommb
+  l#ina         => l#inab
+  l#lanna       => l#lannab
+  l#om          => l#omb
+  l#orra        => l#orrab
+  l#tip         => l#tipb
+  l#tviy        => l#tviyb
+  l#urchin      => l#urchib
+  l#xik         => l#xikb
+  l#noon        => l#noonb
 END
 
 ACTION_PHP_EACH cd_banters AS dv => banter BEGIN

@@ -1,0 +1,17 @@
+CHAIN IF WEIGHT #-1
+~IsGabber("L#URCHIN")
+See("L#URCHIN")
+!StateCheck("L#NOON",CD_STATE_NOTVALID)
+!StateCheck("L#URCHIN",CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+Global("L#URCHINNOONBanter1","GLOBAL",0)~ THEN L#NOONB L#URCHINpsNOONBanter1
+@0
+DO ~IncrementGlobal("L#URCHINNOONBanter1","GLOBAL",1)~
+==L#URCHIB @1
+==L#NOONB @2
+==L#URCHIB @3
+==L#NOONB @4
+==L#URCHIB @5
+==L#NOONB @6
+EXIT
